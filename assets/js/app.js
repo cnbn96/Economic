@@ -6,7 +6,7 @@
     itemMargin: 9,
   });
   
-  $("a[href=#zzz]").on('click', function(e) {
+  $("a[href=#hotnews]").on('click', function(e) {
     e.preventDefault();
   });
 });
