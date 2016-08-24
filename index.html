@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="Content/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets\css\app.css">
+
 </head>
 
 <body>
@@ -573,103 +574,75 @@
         <!----END NAVBAR ---->
 
         <!----BEGIN SLIDER ---->
-        <div class="flex-slider">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
-
+        <div class="flex-slider container-fluid">
+            <!-- Left and right controls -->
+            <nav class="main-slider-controls">
+                <div id="main-carousel" class="clearfix container">
+                    <a href="#" class="previous ">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="main-slider slide crsl-items " data-navigation="main-carousel">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="slider-background" style="background: url('../../assets/images/razer-slider.jpg');">
-
-                        </div>
-                        <div class="container slider-content">
-                            <h4 class="title">Lorem Ipsum</h4>
-                            <div class="content">
-                                <p class="slider-text">
-                                    Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
-                                    risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui.
-                                    Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
-                                </p>
-                            </div>
-                            <div class="readmore-button">
-                                <a href="#">READ MORE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="slider-background" style="background: url('../../assets/images/razer-slider.jpg');">
-
-                        </div>
-                        <div class="container slider-content">
-                            <h4 class="title">HEADPHONE</h4>
-                            <div class="content">
-                                <p class="slider-text">
-                                    Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
-                                    risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui.
-                                    Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
-                                </p>
-                            </div>
-                            <div class="readmore-button">
-                                <a href="#">READ MORE</a>
+                <div class="crsl-wrap" role="listbox">
+                    <div class="crsl-item">
+                        <div class="slider-background" style="background: url('assets/images/razer-slider.jpg');"></div>
+                        <div class="container">
+                            <div class="slider-content">
+                                <h4 class="title">Lorem Ipsum</h4>
+                                <div class="content">
+                                    <p class="slider-text">
+                                        Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                                        risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel
+                                        dui. Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
+                                    </p>
+                                </div>
+                                <div class="readmore-button">
+                                    <a href="#">READ MORE</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="item">
-                        <div class="slider-background" style="background: url('../../assets/images/razer-slider.jpg');">
-
-                        </div>
-                        <div class="container slider-content">
-                            <h4 class="title">RAZER</h4>
-                            <div class="content">
-                                <p class="slider-text">
-                                    Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
-                                    risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui.
-                                    Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
-                                </p>
-                            </div>
-                            <div class="readmore-button">
-                                <a href="#">READ MORE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="slider-background" style="background: url('../../assets/images/razer-slider.jpg');">
-
-                        </div>
-                        <div class="container slider-content">
-                            <h4 class="title">ZZZZ</h4>
-                            <div class="content">
-                                <p class="slider-text">
-                                    Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
-                                    risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel dui.
-                                    Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
-                                </p>
-                            </div>
-                            <div class="readmore-button">
-                                <a href="#">READ MORE</a>
+                    <div class="crsl-item">
+                        <div class="slider-background" style="background: url('assets/images/razer-slider.jpg');"></div>
+                        <div class="container">
+                            <div class="slider-content">
+                                <h4 class="title">Lorem Ipsum</h4>
+                                <div class="content">
+                                    <p class="slider-text">
+                                        Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                                        risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel
+                                        dui. Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
+                                    </p>
+                                </div>
+                                <div class="readmore-button">
+                                    <a href="#">READ MORE</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Left and right controls -->
-                    <a class="slider-control chevron-left" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="slider-control chevron-right" href="#myCarousel" role="button" data-slide="next">
-                        <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="crsl-item">
+                        <div class="slider-background" style="background: url('assets/images/razer-slider.jpg');"></div>
+                        <div class="container">
+                            <div class="slider-content">
+                                <h4 class="title">Lorem Ipsum</h4>
+                                <div class="content">
+                                    <p class="slider-text">
+                                        Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                                        risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel
+                                        dui. Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
+                                    </p>
+                                </div>
+                                <div class="readmore-button">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -715,7 +688,7 @@
                     </div>
                     <!--END TABS-->
                     <!--BEGIN CAROUSEL ITEMS-->
-                    <div class="crsl-items" data-navigation="navbtns">
+                    <div class="hotnews-slider crsl-items" data-navigation="navbtns">
                         <div class="crsl-wrap slider-wrap">
                             <div class="crsl-item card-slider">
                                 <figure class="text-center">
@@ -822,13 +795,17 @@
                     <!--END CAROUSEL ITEMS-->
                 </div>
                 <!----END CARD PRODUCT 1 ---->
+
                 <!----BEGIN CARD PRODUCT 2 ---->
                 <div class="product-card">
                     <div class="row">
                         <div class="col-xs-12 col-lg-3">
-                            <div class="menu-left">
-                                <h3 class="title">
-                                    <img src="assets\images\headphone-icon.png" alt="AUDIO"> Audio
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\headphone.svg" alt="AUDIO"></span>
+                                        <span class="text">Audio</span>
+                                    </a>
                                 </h3>
                                 <a href="javascript:;" class="toggle-nav">
                                     <span class="show-nav"></span>
@@ -850,60 +827,86 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-lg-9">
-                            <div class="brands">
-                                <div class="all-brands">
-                                    <h4 class="title">
-                                        <a href="#">All Brands</a>
-                                    </h4>
-                                </div>
-                                <!--CAROUSEL BRANDS -->
-                                <div class="crsl-items" data-navigation="crsl-brands">
-                                    <div class="crsl-wrap">
-                                        <div class="crsl-item">
-                                            <div class="item">
-                                                <a href="#">
-                                                    <img src="assets\images\svg-icon\yuin-logo.svg" alt="Yuin">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="crsl-item">
-                                            <div class="item">
-                                                <a href="#">
-                                                    <img src="assets\images\svg-icon\1more-logo.svg" alt="Yuin">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="crsl-item">
-                                            <div class="item">
-                                                <a href="#">
-                                                    <img src="assets\images\svg-icon\akg-logo.svg" alt="Yuin">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="crsl-item">
-                                            <div class="item">
-                                                <a href="#">
-                                                    <img src="assets\images\svg-icon\astell-and-kern-logo.svg" alt="Yuin">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="crsl-item">
-                                            <div class="item">
-                                                <a href="#">
-                                                    <img src="assets\images\svg-icon\audeze-logo.svg" alt="Yuin">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="crsl-item">
-                                            <div class="item">
-                                                <a href="#">
-                                                    <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
-                                                </a>
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="audio-brands-slider brands-slider crsl-items" data-navigation="audio-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\yuin-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\1more-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\akg-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\astell-and-kern-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audeze-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                     <div class="slider-controls">
-                                        <div id="brands-crsl" class="clearfix">
+                                        <div id="audio-crsl-brands" class="clearfix">
                                             <a href="#xxx" class="previous btn-prev">
                                                 <i class="fa fa-chevron-left"></i>
                                             </a>
@@ -913,27 +916,714 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="slider-products crsl-items" data-navigation="crsl-audio-products">
-                                <div class="crsl-wrap">
-                                    <div class="crsl-item">
-                                        
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="audio-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="slider-controls">
-                                    <div id="crsl-audio-products" class="clearfix">
-                                        <a href="#zzz" class="previous btn-prev">
-                                            <i class="fa fa-chevron-left"></i>
-                                        </a>
-                                        <a href="#zzz" class="next btn-next">
-                                            <i class="fa fa-chevron-right"></i>
-                                        </a>
+                                    <div class="audio-product-slider product-slider crsl-items" data-navigation="audio-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!----END CARD PRODUCT 2 ---->
+                
+                <!----BEGIN CARD PRODUCT 3 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\headphone.svg" alt="AUDIO"></span>
+                                        <span class="text">Audio</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Headphones</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">DAC / Headamp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Music Players</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="gear-brands-slider brands-slider crsl-items" data-navigation="gear-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\yuin-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\1more-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\akg-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\astell-and-kern-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audeze-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="gear-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="gear-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="gear-product-slider product-slider crsl-items" data-navigation="gear-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 3 ---->
+
+                <!----BEGIN CARD PRODUCT 4 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\headphone.svg" alt="AUDIO"></span>
+                                        <span class="text">Audio</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Headphones</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">DAC / Headamp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Music Players</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="speaker-brands-slider brands-slider crsl-items" data-navigation="speaker-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\yuin-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\1more-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\akg-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\astell-and-kern-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audeze-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="speaker-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="speaker-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="speaker-product-slider product-slider crsl-items" data-navigation="speaker-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 4 ---->
+
+                <!----BEGIN CARD PRODUCT 5 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\headphone.svg" alt="AUDIO"></span>
+                                        <span class="text">Audio</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Headphones</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">DAC / Headamp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Music Players</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="computer-brands-slider brands-slider crsl-items" data-navigation="computer-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\yuin-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\1more-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\akg-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\astell-and-kern-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audeze-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\audio-technica-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="computer-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="computer-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="computer-product-slider product-slider crsl-items" data-navigation="computer-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 5 ---->
+
             </div>
         </div>
         <!----END ZONE PRODUCTs---->
