@@ -138,6 +138,8 @@ img {
       background-color: #09c3ed;
       color: #fbfbfb; }
     .main-content .navbar .main-menu .item .icon img {
+      width: 21px;
+      height: 21px;
       margin-bottom: 5px; }
     .main-content .navbar .main-menu .item .text {
       display: inline-block; }
