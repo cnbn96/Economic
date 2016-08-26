@@ -367,9 +367,11 @@ img {
       .zone-products .product-card .col-right .products .slider-controls .crsl-controls a.previous {
         left: 0; }
       .zone-products .product-card .col-right .products .slider-controls .crsl-controls a.next {
-        right: 0; }
+        right: 2px; }
   .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item {
-    padding: 20px 0; }
+    padding: 20px 0 2px 0; }
+    .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item figure a {
+      height: 255px; }
     .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item figure figcaption h3 {
       font-size: 17px;
       font-weight: bold;
@@ -378,11 +380,22 @@ img {
       font-size: 17px;
       font-weight: lighter;
       margin-bottom: 10px; }
-    .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item figure figcaption .price .price-number {
-      color: #09c3ed;
-      font-size: 17px;
-      font-weight: bold; }
+    .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item figure figcaption .price {
+      margin-bottom: 20px; }
+      .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item figure figcaption .price .price-number {
+        color: #09c3ed;
+        font-size: 17px;
+        font-weight: bold; }
+    .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item figure .info {
+      position: absolute;
+      font-weight: bold;
+      padding: 5px 15px;
+      background: #09c3ed;
+      top: 0;
+      left: 0;
+      color: #fbfbfb; }
     .zone-products .product-card .col-right .products .product-slider .crsl-wrap .crsl-item:hover {
-      border: 1px solid #09c3ed; }
+      border: 1px solid #09c3ed;
+      transition: all 0.4s; }
 
 /*# sourceMappingURL=app.css.map */

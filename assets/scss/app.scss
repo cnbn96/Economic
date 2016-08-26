@@ -527,16 +527,19 @@ img {
 							left:0;
 						}
 						a.next{
-							right:0;
+							right:2px;
 						}
 					}					
 				}				
 				.product-slider{					
 					.crsl-wrap{
 						.crsl-item{
-							padding: 20px 0;
+							padding: 20px 0 2px 0;
 							figure{
-								figcaption{
+								a{
+									height: 255px;
+								}
+								figcaption{									
 									h3{
 										font-size: 17px;
 										font-weight: bold;
@@ -548,6 +551,7 @@ img {
 										margin-bottom: 10px;
 									}
 									.price{
+										margin-bottom: 20px;
 										.price-number{
 											color: $light-blue;
 											font-size: 17px;
@@ -555,9 +559,19 @@ img {
 										}
 									}
 								}
+								.info{
+									position: absolute;
+									font-weight: bold;
+									padding: 5px 15px;
+									background: $light-blue;
+									top: 0;
+									left: 0;
+									color: $white;								
+								}																							
 							}
 							&:hover{
-								border: 1px solid $light-blue;
+								border:1px solid $light-blue;
+								transition: all 0.4s;
 							}
 						}
 					}
