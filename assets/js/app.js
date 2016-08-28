@@ -53,5 +53,11 @@
     visible: 3,
     itemMinWidth: 250,
     itemEqualHeight: 400
+  });  
+  $('.news-slider').carousel({    
+    visible: 1,
+  });
+  $('.brands-sliderz').carousel({    
+    visible: 3
   });
 }())
