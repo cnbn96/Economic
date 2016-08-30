@@ -60,4 +60,8 @@
   $('.brands-sliderz').carousel({    
     visible: 3
   });
+
+  $('.nav-vertical').on('click', function(e){
+    var o = e.target;
+  });
 }())
