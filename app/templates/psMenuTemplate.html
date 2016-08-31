@@ -1,0 +1,12 @@
+<div ng-class="{'container': isHorizontal(), 'container-fluid': !isHorizontal()}">
+    <ul class="main-menu">
+        <li class="nav-vertical col-xs-12" ng-if="!isHorizontal()">
+            <div class="title">
+                <i class="fa fa-bars"></i>
+                <h3 class="text">NAVIGATION</h3>
+                <i class="arrow fa fa-chevron-right" ng-class="{'fa-route-270': !isMenuOpen}"></i>
+            </div>
+        </li>
+        <li class="navbar-item" ng-transclude></li>
+    </ul>
+</div>
