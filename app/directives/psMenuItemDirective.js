@@ -4,7 +4,7 @@ angular.module('app').directive('psMenuItem', function(){
         restrict: 'E',
         required: '^psMenu',
         controller: 'psMenuItemController',
-        template:'app\templates\psMenuItemTemplate.html',
+        templateUrl:'app/templates/psMenuItemTemplate.html',
         scope: {
             label: '@',
             icon: '@'
