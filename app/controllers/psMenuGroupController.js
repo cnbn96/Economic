@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app').controller('psMenuGroupController', 
-    ['$scope',
+    ['$scope','$window',
         function($scope){
-
+            
         }]);

@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="assets\fonts\fonts-awesome\font-awesome.min.css">
     <link href="assets\fonts\oswald-fonts.css" rel="stylesheet">
     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets\css\ng-animation.css">
     <link rel="stylesheet" href="assets\css\app.css">
-
+    <style>              
+        .ng-show {
+            height: 100px;
+        }
+    </style>
 </head>
 
 <body ng-app="app">
@@ -62,27 +67,14 @@
     <div class="main-content">
         <!----BEGIN NAVBAR ---->
         <div class="navbar">
-            <div class="container">
-                <ul class="main-menu">
-                    <li class="nav-vertical col-xs-12">
-                        <div class="title">
-                            <i class="fa fa-bars"></i>
-                            <h3 class="text">NAVIGATION</h3>
-                            <i class="arrow fa fa-chevron-right"></i>
-                        </div>
-                    </li>
-                    <li class="navbar-item">
-                        <ul>
-                            <ps-menu-group label="Audio" icon="assets\images\svg-icon\headphone-black.svg"></ps-menu-group>
-                            <ps-menu-group label="Speaker" icon="assets\images\svg-icon\speaker-black.svg"></ps-menu-group>
-                            <ps-menu-group label="Gaming Gear" icon="assets\images\svg-icon\gamepad-black.svg"></ps-menu-group>
-                            <ps-menu-group label="Computer" icon="assets\images\svg-icon\desktop-black.svg"></ps-menu-group>
-                            <ps-menu-item label="Promotion" icon="assets\images\svg-icon\gift-box-black.svg"></ps-menu-item>
-                            <ps-menu-item label="Contacts" icon="assets\images\svg-icon\person-black.svg"></ps-menu-item>                            
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <ps-menu>
+                <ps-menu-group label="Audio" icon="assets\images\svg-icon\headphone-black.svg" route="audio"></ps-menu-group>
+                <ps-menu-group label="Speaker" icon="assets\images\svg-icon\speaker-black.svg" route="speaker"></ps-menu-group>
+                <ps-menu-group label="Gaming Gear" icon="assets\images\svg-icon\gamepad-black.svg" route="gear"></ps-menu-group>
+                <ps-menu-group label="Computer" icon="assets\images\svg-icon\desktop-black.svg" route="computer"></ps-menu-group>
+                <ps-menu-item label="Promotion" icon="assets\images\svg-icon\gift-box-black.svg" route="promotion"></ps-menu-item>
+                <ps-menu-item label="Contacts" icon="assets\images\svg-icon\person-black.svg" route="contacts"></ps-menu-item>
+            </ps-menu>
         </div>
         <!----END NAVBAR ---->
 
@@ -312,7 +304,7 @@
                 <!----BEGIN CARD PRODUCT 2 ---->
                 <div class="product-card">
                     <div class="row">
-                        <div class="col-xs-12 col-lg-3">
+                        <div class="col-xs-12 col-md-3 col-lg-3">
                             <div class="col-left">
                                 <h3 class="title-zone">
                                     <a href="#">
@@ -339,10 +331,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-xs-12 col-lg-9">
+                        <div class="col-xs-12 col-md-9 col-lg-9">
                             <div class="col-right">
                                 <div class="brands">
-                                    <div class="all-brands col-xs-12 col-lg-2">
+                                    <div class="all-brands col-xs-12 col-md-10 col-lg-2">
                                         <h4 class="title">
                                             <a href="#">All Brands</a>
                                         </h4>
@@ -1601,6 +1593,7 @@
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
     <!-- APP MODULE -->
     <script src="app/appModule.js"></script>
 

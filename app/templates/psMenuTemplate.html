@@ -1,12 +1,14 @@
-<div ng-class="{'container': isHorizontal(), 'container-fluid': !isHorizontal()}">
-    <ul class="main-menu">
-        <li class="nav-vertical col-xs-12" ng-if="!isHorizontal()">
+<div ng-class="{'container': isHorizontal, 'container-fluid': !isHorizontal}">
+    <div class="main-menu">
+        <div class="nav-vertical col-xs-12" ng-if="!isHorizontal" ng-click="menuButtonArrowClicked()">
             <div class="title">
                 <i class="fa fa-bars"></i>
                 <h3 class="text">NAVIGATION</h3>
-                <i class="arrow fa fa-chevron-right" ng-class="{'fa-route-270': !isMenuOpen}"></i>
+                <i class="arrow fa" ng-show="isMenuButtonArrowVisible" ng-class="{'fa-chevron-right': !isMenuVisible, 'fa-chevron-down': isMenuVisible}"></i>
             </div>
-        </li>
-        <li class="navbar-item" ng-transclude></li>
-    </ul>
+        </div>
+        <ul class="navbar-item slidedown" ng-show="isMenuVisible || isHorizontal"
+                                ng-transclude></ul>
+        <!--<ul class="navbar-item slidedown"  ng-transclude></ul>-->
+    </div>
 </div>
