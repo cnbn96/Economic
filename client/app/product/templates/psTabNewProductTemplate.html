@@ -1,0 +1,98 @@
+<!----BEGIN CARD PRODUCT 1 ---->
+<div class="product-card">
+    <div class="tabs col-sm-12">
+        <!--BEGIN TABS-->
+        <ul>
+            <li ng-class="{active: isSet(1)}">
+                <a href="#" class="tab-item" ng-click="setTab(1)">
+                    <i class="fa fa-hourglass-half"></i>
+                    <span class="text">
+                                        Comming soon
+                                    </span>
+                </a>
+            </li>
+            <li ng-class="{active: isSet(2)}">
+                <a href="#" class="tab-item" ng-click="setTab(2)">
+                    <i class="fa fa-eye"></i>
+                    <span class="text">
+                                        Best Sellers
+                                    </span>
+                </a>
+            </li>
+        </ul>
+        <nav class="slidernav slider-controls text-center right">
+            <div id="commingProducts" class="clearfix" ng-show="isSet(1)">
+                <a href="#hotnews" class="previous btn-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </a>
+                <a href="#hotnews" class="next btn-next">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+            <div id="bestSellerProducts" class="clearfix" ng-show="isSet(2)">
+                <a href="#hotnews" class="previous btn-prev">
+                    <i class="fa fa-chevron-left"></i>
+                </a>
+                <a href="#hotnews" class="next btn-next">
+                    <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <!--END TABS-->
+    <!--BEGIN CAROUSEL ITEMS-->
+    <div class="tab-content">
+        <div class="comming hotnews-slider crsl-items" data-navigation="commingProducts" ng-show="isSet(1)">
+            <div class="crsl-wrap slider-wrap">
+                <div class="crsl-item card-slider" ng-repeat="product in commingProducts">
+                    <figure class="text-center">
+                        <a href="#" class="center-block" title="{{product.brand+' '+product.name}}">
+                            <img ng-src="{{product.productImage}}" alt="{{product.brand+' '+product.name}}" class="card-item-img">
+                        </a>
+                        <figcaption>
+                            <h3>{{product.brand}}</h3>
+                            <div class="name">
+                                <span>
+                                        {{product.name}}
+                                    </span>
+                            </div>
+                            <div class="price">
+                                <span class="price-number">
+                                        {{product.priceNumber | currency: "": "0"}} ₫
+                                    </span>
+                            </div>
+                        </figcaption>
+                        <span class="info text-center" ng-if="product.status">{{product.status}}</span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="bestsellers hotnews-slider crsl-items" data-navigation="bestSellerProducts" ng-show="isSet(2)">
+            <div class="crsl-wrap slider-wrap">
+                <div class="crsl-item card-slider" ng-repeat="product in bestSellerProducts">
+                    <figure class="text-center">
+                        <a href="#" class="center-block" title="{{product.brand+' '+product.name}}">
+                            <img ng-src="{{product.productImage}}" alt="{{product.brand+' '+product.name}}" class="card-item-img">
+                        </a>
+                        <figcaption>
+                            <h3>{{product.brand}}</h3>
+                            <div class="name">
+                                <span>
+                                        {{product.name}}
+                                    </span>
+                            </div>
+                            <div class="price">
+                                <span class="price-number">
+                                        {{product.priceNumber | currency: "": "0"}} ₫
+                                    </span>
+                            </div>
+                        </figcaption>
+                        <span class="info text-center" ng-if="product.status">{{product.status}}</span>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--END CAROUSEL ITEMS-->
+</div>
+<!----END CARD PRODUCT 1 ---->

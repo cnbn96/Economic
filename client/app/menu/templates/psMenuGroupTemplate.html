@@ -1,0 +1,14 @@
+<div class="zzzzzz">
+        <li class="item submenu col-xs-12 col-lg-2" ng-mouseenter="subMenuMouseEnter()" ng-mouseleave="subMenuMouseLeave()">
+            <span class="icon"><img ng-src="{{icon}}" alt=""></span>
+            <span class="text">{{label}}</span>
+            <em class="arrow fa fa-chevron-right" ng-show="!isHorizontal" ng-click="subMenuClicked()" ng-class="{'fa-chevron-down':isOpen}"></em>
+        </li>
+        <div ng-show="isOpen" 
+             ng-class="{'dropdown-submenu-visible': isOpen,'dropdown-submenu':!isOpen,'submenu-horizontal-hover': subMenuHover}"
+             ng-mouseenter="subMenuMouseEnter()" 
+             ng-mouseleave="subMenuMouseLeave()"
+             ng-transclude>
+        </div>
+
+</div>

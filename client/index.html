@@ -1,0 +1,1433 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Economic</title>
+    <link rel="stylesheet" href="assets\fonts\fonts-awesome\font-awesome.min.css">
+    <link href="assets\fonts\oswald-fonts.css" rel="stylesheet">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets\css\ng-animation.css">
+    <link rel="stylesheet" href="assets\css\app.css">
+    <style>
+        .ng-show {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body ng-app="app" ng-controller="homeController as vm">
+
+    <!----BEGIN HEADER ---->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-xs-12 col-lg-3">
+                    <img src="assets\images\logo-icon.png" alt="SAMPLELOGO" class="header-logo">
+                </div>
+                <div class="search-bar form-group col-xs-12 col-lg-5">
+                    <input type="text" class="search-box" placeholder="Search">
+                    <span class="search-icon">
+                        <img src="assets\images\search-icon.png">
+                    </span>
+                </div>
+                <div class="cart-hotline-cash col-xs-12 col-lg-4">
+                    <div class="cart left">
+                        <a href="#"><img src="assets\images\cart-icon.png" alt="CART"></a>
+                        <span class="number-cart">1</span>
+                    </div>
+                    <div class="hotline-cash right">
+                        <div class="hotline">
+                            <i class="fa fa-comments-o"></i>
+                            <div class="text">
+                                <span class="title">
+                                Hotline <br>
+                            </span>
+                                <span class="number">
+                                01203214160
+                            </span>
+                            </div>
+                        </div>
+                        <div class="cash">
+                            <i class="fa fa-truck"></i>
+                            <div class="text">
+                                <span class="title">Cash on<br>Delivery 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----END HEADER ---->
+
+    <!----BEGIN MAIN-CONTENT ---->
+    <div class="main-content">
+        <!----BEGIN NAVBAR ---->
+        <div class="navbar">
+            <ps-menu>
+                <ps-menu-group label="Audio" icon="assets\images\svg-icon\headphone-black.svg" route="audio">
+                    <ps-menu-mega-list by-brands="audio-brands">
+                        <ps-mega-group list-items="vm.testListMega"></ps-mega-group>
+                    </ps-menu-mega-list>
+                </ps-menu-group>
+
+                <ps-menu-group label="Speaker" icon="assets\images\svg-icon\speaker-black.svg" route="speaker"></ps-menu-group>
+                <ps-menu-group label="Gaming Gear" icon="assets\images\svg-icon\gamepad-black.svg" route="gear"></ps-menu-group>
+                <ps-menu-group label="Computer" icon="assets\images\svg-icon\desktop-black.svg" route="computer"></ps-menu-group>
+                <ps-menu-item label="Promotion" icon="assets\images\svg-icon\gift-box-black.svg" route="promotion"></ps-menu-item>
+                <ps-menu-item label="Contacts" icon="assets\images\svg-icon\person-black.svg" route="contacts"></ps-menu-item>
+            </ps-menu>
+        </div>
+        <!----END NAVBAR ---->
+
+        <!----BEGIN SLIDER ---->
+        <div class="flex-slider container-fluid">
+            <!-- Left and right controls -->
+            <nav class="main-slider-controls">
+                <div id="main-carousel" class="clearfix container">
+                    <a href="#" class="previous ">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="next">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="main-slider slide crsl-items " data-navigation="main-carousel">
+                <!-- Wrapper for slides -->
+                <div class="crsl-wrap" role="listbox">
+                    <div class="crsl-item">
+                        <div class="slider-background" style="background: url('assets/images/razer-slider.jpg');"></div>
+                        <div class="container">
+                            <div class="slider-content">
+                                <h4 class="title">Lorem Ipsum</h4>
+                                <div class="content">
+                                    <p class="slider-text">
+                                        Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                                        risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel
+                                        dui. Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
+                                    </p>
+                                </div>
+                                <div class="readmore-button">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crsl-item">
+                        <div class="slider-background" style="background: url('assets/images/razer-slider.jpg');"></div>
+                        <div class="container">
+                            <div class="slider-content">
+                                <h4 class="title">Lorem Ipsum</h4>
+                                <div class="content">
+                                    <p class="slider-text">
+                                        Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                                        risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel
+                                        dui. Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
+                                    </p>
+                                </div>
+                                <div class="readmore-button">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="crsl-item">
+                        <div class="slider-background" style="background: url('assets/images/razer-slider.jpg');"></div>
+                        <div class="container">
+                            <div class="slider-content">
+                                <h4 class="title">Lorem Ipsum</h4>
+                                <div class="content">
+                                    <p class="slider-text">
+                                        Nulla facilisi. Fusce eget finibus eros. Praesent nunc nibh, dignissim et justo eu, blandit pretium nulla. Nulla tristique,
+                                        risus eu imperdiet sagittis, est orci efficitur tortor, at maximus tortor leo vel
+                                        dui. Aenean vitae sodales nulla. Aenean condimentum, tellus eget efficitur efficitur,
+                                    </p>
+                                </div>
+                                <div class="readmore-button">
+                                    <a href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----END SLIDER ---->
+
+
+        <!----BEGIN ZONE PRODUCT 1 ---->
+        <div class="zone-products">
+            <div class="container">
+
+                <!----BEGIN CARD PRODUCT 1 ---->
+                
+                <ps-tab-new-product comming-products="vm.testProducts.commingProducts" best-seller-products="vm.testProducts.bestSellerProducts"></ps-tab-new-product>
+                <!----END CARD PRODUCT 1 ---->
+
+                <!----BEGIN CARD PRODUCT 2 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\headphone-white.svg" alt="AUDIO"></span>
+                                        <span class="text">Audio</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Headphones</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">DAC / Headamp</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Music Players</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-9 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-md-10 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="audio-brands-slider brands-slider crsl-items" data-navigation="audio-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\yuin-logo.svg" name="Yuin"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\1more-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\akg-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\astell-and-kern-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\audeze-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\audio-technica-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\1more-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\akg-logo.svg" name="1 More"></ps-crsl-item>
+                                                <ps-crsl-item brand-url="assets\images\svg-icon\brands\audio\astell-and-kern-logo.svg" name="1 More"></ps-crsl-item>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="audio-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="audio-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="audio-product-slider product-slider crsl-items" data-navigation="audio-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="FIIO X1">
+                                                        <img src="assets/images/fiio.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>FIIO</h3>
+                                                        <div class="name">
+                                                            <span>X1</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">2,500,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                    <span class="info text-center">Coming</span>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/headphone.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="FIIO X1">
+                                                        <img src="assets/images/fiio.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>FIIO</h3>
+                                                        <div class="name">
+                                                            <span>X1</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">2,500,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                    <span class="info text-center">Coming</span>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="FIIO X1">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>FIIO</h3>
+                                                        <div class="name">
+                                                            <span>X1</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">2,500,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                    <span class="info text-center">Coming</span>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 2 ---->
+
+                <!----BEGIN CARD PRODUCT 3 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\gamepad-white.svg" alt="AUDIO"></span>
+                                        <span class="text">Gaming Gear</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Gaming Headsets</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Gaming Keyboards</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Gaming Mice</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Gaming Mousepads</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Gaming Chair/Desks</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="gear-brands-slider brands-slider crsl-items" data-navigation="gear-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\gear\akracing-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\gear\corsair-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\gear\cougar-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\gear\das-keyboard-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\gear\cooler-master-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\gear\das-keyboard-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="gear-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="gear-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="gear-product-slider product-slider crsl-items" data-navigation="gear-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/mouse1.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>DAS KEYBOARD</h3>
+                                                        <div class="name">
+                                                            <span>Division Zero M50</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">2,000,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/rival.png" alt="STEEL SERIES - Rival 700" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>STEEL SERIES</h3>
+                                                        <div class="name">
+                                                            <span>Rival 700</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">2,390,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="RAZER - Firefly">
+                                                        <img src="assets/images/razer-pad.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>RAZER</h3>
+                                                        <div class="name">
+                                                            <span>Firefly</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">1,590,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 3 ---->
+
+                <!----BEGIN CARD PRODUCT 4 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\speaker-white.svg" alt="AUDIO"></span>
+                                        <span class="text">Speaker</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Portable Speakers</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Computer Speakers</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Soundbar Speakers</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="speaker-brands-slider brands-slider crsl-items" data-navigation="speaker-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\speaker\razer-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\speaker\dream-wave-logo.jpg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\speaker\harman-kardon-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\speaker\riva-audio-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\speaker\acoustic-energy-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\speaker\acoustic-energy-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="speaker-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="speaker-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="speaker-product-slider product-slider crsl-items" data-navigation="speaker-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="SONY - SRS-HG1">
+                                                        <img src="assets/images/sony-srs.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>SONY</h3>
+                                                        <div class="name">
+                                                            <span>SRS-HG1</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">4,290,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/dreamwave-harmony.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>DREAM WAVE</h3>
+                                                        <div class="name">
+                                                            <span>Harmony</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,500,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/dreamwave-survivor.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>DREAM WAVE</h3>
+                                                        <div class="name">
+                                                            <span>Survivor</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">6,900,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 4 ---->
+
+                <!----BEGIN CARD PRODUCT 5 ---->
+                <div class="product-card">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <h3 class="title-zone">
+                                    <a href="#">
+                                        <span class="icon"><img src="assets\images\svg-icon\desktop-white.svg" alt="AUDIO"></span>
+                                        <span class="text">Computer</span>
+                                    </a>
+                                </h3>
+                                <a href="javascript:;" class="toggle-nav">
+                                    <span class="show-nav"></span>
+                                </a>
+                                <ul class="nav-list-items">
+                                    <li class="item">
+                                        <a href="#">Gaming Laptops</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Gaming Desktops</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">Monitors</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#">All</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+                                <div class="brands">
+                                    <div class="all-brands col-xs-12 col-lg-2">
+                                        <h4 class="title">
+                                            <a href="#">All Brands</a>
+                                        </h4>
+                                    </div>
+                                    <!--CAROUSEL BRANDS -->
+                                    <div class="col-xs-12 col-lg-8">
+                                        <div class="computer-brands-slider brands-slider crsl-items" data-navigation="computer-crsl-brands">
+                                            <div class="crsl-wrap">
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\computer\asrock-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\computer\asus-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\computer\avexir-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\computer\custom-gaming-pc.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\computer\benq-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="crsl-item">
+                                                    <div class="item">
+                                                        <a href="#">
+                                                            <img src="assets\images\svg-icon\brands\computer\asus-logo.svg" alt="Yuin">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-controls">
+                                        <div id="computer-crsl-brands" class="clearfix">
+                                            <a href="#xxx" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#xxx" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="products">
+                                    <div class="slider-controls text-center">
+                                        <div id="computer-crsl-product" class="clearfix crsl-controls">
+                                            <a href="#zzz" class="previous btn-prev">
+                                                <i class="fa fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#zzz" class="next btn-next">
+                                                <i class="fa fa-chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="computer-product-slider product-slider crsl-items" data-navigation="computer-crsl-product">
+                                        <div class="crsl-wrap">
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="MSI - GT80S 6QF TITAN SLI - ANNIVERS">
+                                                        <img src="assets/images/msi.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>MSI</h3>
+                                                        <div class="name">
+                                                            <span>GT80S 6QF TITAN SLI - ANNIVERS...</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">112,500,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="LG -34UC98">
+                                                        <img src="assets\images\lg-34uc98.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LG</h3>
+                                                        <div class="name">
+                                                            <span>34UC98</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">22,000,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="NZXT - H440">
+                                                        <img src="assets/images/razer-pc.png" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>NZXT</h3>
+                                                        <div class="name">
+                                                            <span>H440</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,880,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                            <div class="crsl-item card-slider">
+                                                <figure class="text-center">
+                                                    <a href="#" class="center-block" title="zzzz">
+                                                        <img src="assets/images/keyboard.jpg" alt="KEYBOARD" class="card-item-img">
+                                                    </a>
+                                                    <figcaption>
+                                                        <h3>LEOPOLD</h3>
+                                                        <div class="name">
+                                                            <span>FC900R Blue Grey Edition</span>
+                                                        </div>
+                                                        <div class="price">
+                                                            <span class="price-number">3,190,000 ₫</span>
+                                                        </div>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!----END CARD PRODUCT 5 ---->
+
+            </div>
+        </div>
+        <!----END ZONE PRODUCTs---->
+
+        <!---- BEGIN POSTs and BRANDs ---->
+        <div class="news-brands">
+            <div class="container">
+                <div class="row">
+                    <div class="news-col col-xs-12 col-lg-6">
+                        <div class="title-bar">
+                            <h3 class="title-col">
+                                NEWS
+                            </h3>
+                            <div class="slider-controls right text-center">
+                                <div id="news-crsl" class="clearfix">
+                                    <a href="#xxx" class="previous btn-prev">
+                                        <i class="fa fa-chevron-left"></i>
+                                    </a>
+                                    <a href="#xxx" class="next btn-next">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <div class="posts news-slider crsl-items" data-navigation="news-crsl">
+                                <!-- BEGIN CAROUSEL -->
+                                <div class="crsl-wrap">
+
+                                    <!-- BEGIN CAROUSEL ITEM -->
+                                    <div class="post crsl-item">
+                                        <ul class="list-post-items">
+                                            <li class="post-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 image">
+                                                        <img src="assets/images/post.jpg" alt="POST">
+                                                    </div>
+                                                    <div class="col-lg-8 text">
+                                                        <h4 class="title">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                                                        </h4>
+                                                        <p class="content">
+                                                            Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                                            erat sed ornare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 image">
+                                                        <img src="assets/images/post.jpg" alt="POST">
+                                                    </div>
+                                                    <div class="col-lg-8 text">
+                                                        <h4 class="title">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                                                        </h4>
+                                                        <p class="content">
+                                                            Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                                            erat sed ornare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 image">
+                                                        <img src="assets/images/post.jpg" alt="POST">
+                                                    </div>
+                                                    <div class="col-lg-8 text">
+                                                        <h4 class="title">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                                                        </h4>
+                                                        <p class="content">
+                                                            Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                                            erat sed ornare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END CAROUSEL ITEM -->
+
+                                    <!-- BEGIN CAROUSEL ITEM -->
+                                    <div class="post crsl-item">
+                                        <ul class="list-post-items">
+                                            <li class="post-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 image">
+                                                        <img src="assets/images/post.jpg" alt="POST">
+                                                    </div>
+                                                    <div class="col-lg-8 text">
+                                                        <h4 class="title">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                                                        </h4>
+                                                        <p class="content">
+                                                            Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                                            erat sed ornare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 image">
+                                                        <img src="assets/images/post.jpg" alt="POST">
+                                                    </div>
+                                                    <div class="col-lg-8 text">
+                                                        <h4 class="title">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                                                        </h4>
+                                                        <p class="content">
+                                                            Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                                            erat sed ornare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="post-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 image">
+                                                        <img src="assets/images/post.jpg" alt="POST">
+                                                    </div>
+                                                    <div class="col-lg-8 text">
+                                                        <h4 class="title">
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate sagittis eros ut congue.
+                                                        </h4>
+                                                        <p class="content">
+                                                            Mauris sed ipsum mauris. Nullam molestie tortor eget ipsum venenatis, mattis lacinia lorem semper. In pellentesque eleifend
+                                                            erat sed ornare.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- END CAROUSEL ITEM -->
+                                </div>
+                            </div>
+                            <!-- END CAROUSEL -->
+                        </div>
+                    </div>
+                    <div class="brands-col col-xs-12 col-lg-6">
+                        <div class="title-bar">
+                            <h3 class="title-col">
+                                BRANDS
+                            </h3>
+                            <div class="slider-controls right text-center">
+                                <div id="crsl-brands" class="clearfix">
+                                    <a href="#xxx" class="previous btn-prev">
+                                        <i class="fa fa-chevron-left"></i>
+                                    </a>
+                                    <a href="#xxx" class="next btn-next">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brands">
+                            <div class="brands-sliderz crsl-items" data-navigation="crsl-brands">
+                                <div class="crsl-wrap">
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="brand crsl-item">
+                                        <ul class="list-brand-items">
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\akg-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\1more-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                            <li class="brand-item">
+                                                <a href="#">
+                                                    <img src="assets\images\svg-icon\brands\audio\audeze-logo.svg" alt="AKG LOGO">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!---- END POSTs and BRANDs ---->
+
+        <!---- BEGIN FEATURES ---->
+        <div class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="feature ">
+                            <a href="#">
+                                <em class="fa fa-truck text-center"></em>
+                                <h4>Shipping Fee</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="feature">
+                            <a href="#">
+                                <em class="fa fa-credit-card-alt text-center"></em>
+                                <h4>Payment Methods</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="feature">
+                            <a href="#">
+                                <em class="fa fa-wrench text-center"></em>
+                                <h4>Warranty Policy</h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <div class="feature last-child">
+                            <a href="#">
+                                <em class="fa fa-cogs text-center"></em>
+                                <h4>Repair Services</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---- END FEATURES ------>
+
+
+        <!---- BEGIN FOOTER ---->
+        <footer class="footer">
+            <div class="footer-email">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-wrap">
+                            <div class="form-email col-xs-12 col-lg-9">
+                                <div class="row">
+                                    <form action="" class="form-horizontal">
+                                        <div class="form-group ">
+                                            <label for="email" class="control-label col-xs-12 col-lg-6">GET THE LASTEST GEARS & MORE</MORE></label>
+                                            <div class="input-group col-xs-12 col-lg-6">
+                                                <input type="email" class="form-control" id="subemail" placeholder="Enter E-Mail Address">
+                                                <button type="submit" class="sign-up-btn">Sign Up</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="address col-xs-12 col-lg-3 text-center">
+                                <i class="fa fa-map-marker"></i>
+                                <h4>Address</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="main-column col-xs-6 col-lg-3">
+                            <ul class="list-items">
+                                <h3 class="title"><a href="#">Audio</a></h3>
+                                <li class="item"><a href="#">Headphone</a></li>
+                                <li class="item"><a href="#">DAC / Headamp</a></li>
+                                <li class="item"><a href="#">Music Players</a></li>
+                                <li class="item"><a href="#">Audio Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-column col-xs-6 col-lg-3">
+                            <ul class="list-items">
+                                <h3 class="title"><a href="#">Computer</a></h3>
+                                <li class="item"><a href="#">Gaming Laptops</a></li>
+                                <li class="item"><a href="#">Gaming Desktops</a></li>
+                                <li class="item"><a href="#">Monitors</a></li>
+                                <li class="item"><a href="#">Computer Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-column col-xs-6 col-lg-3">
+                            <ul class="list-items">
+                                <h3 class="title"><a href="#">Gaming Gear</a></h3>
+                                <li class="item"><a href="#">Gaming Keyboards</a></li>
+                                <li class="item"><a href="#">Gaming Mice</a></li>
+                                <li class="item"><a href="#">Gaming Headsets</a></li>
+                                <li class="item"><a href="#">Gaming Mousepads</a></li>
+                            </ul>
+                        </div>
+                        <div class="main-column col-xs-6 col-lg-3">
+                            <ul class="list-items">
+                                <h3 class="title"><a href="#">Speaker</a></h3>
+                                <li class="item"><a href="#">Portable Speakers</a></li>
+                                <li class="item"><a href="#">Computer Speakers</a></li>
+                                <li class="item"><a href="#">Soundbar Speakers</a></li>
+                                <li class="item"><a href="#">Speaker Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="social-testimonials">
+                        <div class="social col-xs-12 col-lg-6">
+                            <h3 class="title">Follow us on <a href="#">Social Networks</a></h3>
+                            <ul>
+                                <li>
+                                    <h4>On Facebook</h4>
+                                    <div class="fb-page" data-href="https://www.facebook.com/LoLBestVideosFanpage/" data-width="550" data-height="450" data-small-header="false"
+                                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                        <blockquote cite="https://www.facebook.com/LoLBestVideosFanpage/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LoLBestVideosFanpage/">League of Legends Best Video</a></blockquote>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h4>On Instagram</h4>
+                                    <div id="instagram">
+                                        <a class="feedaz" href="https://www.instagram.com/p/BJiT7LCDsAr/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14099739_290187534692169_988430375_n.jpg?ig_cache_key=MTMyNDcwODg2OTU3ODg2NjczMQ%3D%3D.2"></a>
+                                        <a class="feedaz" href="https://www.instagram.com/p/BJZhfx9DfR3/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14031616_1791575137733194_242697328_n.jpg?ig_cache_key=MTMyMjIzNTI4NTA4NjI3MDU4Mw%3D%3D.2"></a>
+                                        <a class="feedaz" href="https://www.instagram.com/p/BJTAoAKjL17/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13687027_633530833494293_729498020_n.jpg?ig_cache_key=MTMyMDQwMTg2NDcwNTc1MjQ0Mw%3D%3D.2"></a>
+                                        <a class="feedaz" href="https://www.instagram.com/p/BJQZ-_JDQBs/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14072969_596983923838779_902477846_n.jpg?ig_cache_key=MTMxOTY2ODk3MDM4NzQ3MjQ5Mg%3D%3D.2"></a>
+                                        <a class="feedaz" href="https://www.instagram.com/p/BJLOgRZDOJu/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13712561_1087662207980804_1074417587_n.jpg?ig_cache_key=MTMxODIxMTEwNjI4NDI5ODg2Mg%3D%3D.2"></a>
+                                        <a class="feedaz" href="https://www.instagram.com/p/BJIt3anDYY0/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13658883_1227483763950108_1255772728_n.jpg?ig_cache_key=MTMxNzUwNDYxMTI0MjU3NTQxMg%3D%3D.2"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="testimonials col-xs-12 col-lg-6">
+                            <h3 class="title">Testimonials</h3>
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="avatar col-xs-3">
+                                        <img src="assets\images\avatar.jpg" alt="Nam Binh">
+                                        <span class="author">Nam Bình</span>
+                                    </div>
+                                    <div class="text col-xs-9">
+                                        <blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="avatar col-xs-3">
+                                        <img src="assets\images\avatar.jpg" alt="Nam Binh">
+                                        <span class="author">Nam Bình</span>
+                                    </div>
+                                    <div class="text col-xs-9">
+                                        <blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="row">
+                                    <div class="avatar col-xs-3">
+                                        <img src="assets\images\avatar.jpg" alt="Nam Binh">
+                                        <span class="author">Nam Bình</span>
+                                    </div>
+                                    <div class="text col-xs-9">
+                                        <blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="footer-utility text-center">
+                            <ul>
+                                <li><a href="#">Home Page</a></li>
+                                <li><a href="#">Shipping Fee</a></li>
+                                <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Warranty Policy</a></li>
+                                <li><a href="#">Repair Services</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="copyright text-center">
+                            Copyright © 2016 <a href="http://facebook.com/nguyennambinh11">cnbn96</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!---- END FOOTER ------>
+    </div>
+
+
+
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=1641551249491668";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'))
+    </script>
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <!-- APP MODULE -->
+    <script src="app/appModule.js"></script>
+    <script src="app/product/appProductModule.js"></script>
+
+    <!-- APP CONTROLLERS -->
+    <script src="app/home/homeController.js"></script>
+    <script src="app/menu/controllers/psMenuController.js"></script>    
+    <script src="app/product/controllers/psTabNewProductController.js"></script>
+
+    <!-- APP DIRECTIVES -->
+    <script src="app/menu/directives/psMenuDirective.js"></script>
+    <script src="app/menu/directives/psMenuGroupDirective.js"></script>
+    <script src="app/menu/directives/psMenuItemDirective.js"></script>
+    <script src="app/menu/directives/psMenuMegaListDirective.js"></script>
+    <script src="app/menu/directives/psMegaGroupDirective.js"></script>
+    <script src="app/product/directives/psTabNewProductDirective.js"></script>
+    <!-- APP SERVICES -->
+
+
+    <!-- APP ELSE -->
+    <script src="assets/js/responsiveCarousel.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
