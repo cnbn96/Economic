@@ -26,7 +26,6 @@ angular.module('app').controller('psMenuController', function ($scope, $timeout,
     }
     $scope.menuButtonArrowClicked = function () {
         $scope.isMenuVisible = !$scope.isMenuVisible;
-        console.log($scope.isMenuVisible);
     }
 
     var checkWidth = function () {
