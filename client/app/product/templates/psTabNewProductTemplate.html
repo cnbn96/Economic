@@ -21,15 +21,7 @@
             </li>
         </ul>
         <nav class="slidernav slider-controls text-center right">
-            <div id="commingProducts" class="clearfix" ng-show="isSet(1)">
-                <a href="#hotnews" class="previous btn-prev">
-                    <i class="fa fa-chevron-left"></i>
-                </a>
-                <a href="#hotnews" class="next btn-next">
-                    <i class="fa fa-chevron-right"></i>
-                </a>
-            </div>
-            <div id="bestSellerProducts" class="clearfix" ng-show="isSet(2)">
+            <div id="commingProducts" class="clearfix">
                 <a href="#hotnews" class="previous btn-prev">
                     <i class="fa fa-chevron-left"></i>
                 </a>
@@ -67,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="bestsellers hotnews-slider crsl-items" data-navigation="bestSellerProducts" ng-show="isSet(2)">
+        <div class="bestsellers hotnews-slider crsl-items" data-navigation="commingProducts" ng-show="isSet(2)">
             <div class="crsl-wrap slider-wrap">
                 <div class="crsl-item card-slider" ng-repeat="product in bestSellerProducts">
                     <figure class="text-center">
