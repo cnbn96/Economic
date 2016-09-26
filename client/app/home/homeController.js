@@ -106,7 +106,7 @@
                     }
                 ];
                 vm.testProducts = {
-                    commingProducts : [
+                    commingProducts: [
                         {
                             status: "Comming",
                             productImage: 'assets/images/mouse1.png',
@@ -115,7 +115,7 @@
                             priceNumber: 3190000
                         },
                         {
-                            status: "HOT", 
+                            status: "HOT",
                             productImage: 'assets/images/keyboard.jpg',
                             brand: 'LEOPOLD',
                             name: 'FC900R Blue Grey Edition',
@@ -154,7 +154,7 @@
                             priceNumber: 3190000
                         }
                     ],
-                    bestSellerProducts : [
+                    bestSellerProducts: [
                         {
                             productImage: 'assets/images/fiio.jpg',
                             brand: 'LEOPOLD',
@@ -202,5 +202,42 @@
                         }
                     ]
                 };
+                vm.testBrands = {
+                    all: "audio",
+                    slide: [
+                        {
+                            image: "assets/images/svg-icon/brands/computer/asrock-logo.svg",
+                            name: "ASRock"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/computer/asus-logo.svg",
+                            name: "ASUS"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/computer/avexir-logo.svg",
+                            name: "AVEXIR"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/computer/benq-logo.svg",
+                            name: "BENQ"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/speaker/razer-logo.svg",
+                            name: "Razer"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/computer/asrock-logo.svg",
+                            name: "ASRock"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/computer/asrock-logo.svg",
+                            name: "ASRock"
+                        },
+                        {
+                            image: "assets/images/svg-icon/brands/computer/asrock-logo.svg",
+                            name: "ASRock"
+                        }
+                    ]
+                }
             }]);
 } ());

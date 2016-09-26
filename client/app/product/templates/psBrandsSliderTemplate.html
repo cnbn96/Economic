@@ -1,0 +1,31 @@
+<div class="brands">
+    <div class="all-brands col-xs-12 col-lg-2">
+        <h4 class="title">
+            <a s-ref="#/brand/{{brands.all}}">All Brands</a>
+        </h4>
+    </div>
+    <!--CAROUSEL BRANDS -->
+    <div class="col-xs-12 col-lg-8">
+        <div class="{{sliderName}} brands-slider crsl-items" data-navigation="{{catName}}">
+            <div class="crsl-wrap">
+                <div class="crsl-item" ng-repeat="brand in brands.slide">
+                    <div class="item">
+                        <a href="#/brand/{{brand.name}}">
+                            <img ng-src="{{brand.image}}" alt="{{brand.name}}">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-controls">
+        <div id="{{catName}}" class="clearfix">
+            <a href="#xxx" class="previous btn-prev">
+                <i class="fa fa-chevron-left"></i>
+            </a>
+            <a href="#xxx" class="next btn-next">
+                <i class="fa fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+</div>

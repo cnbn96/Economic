@@ -56,6 +56,15 @@ img {
   margin: 0;
   padding: 0; }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("../images/loader.gif") 50% 50% no-repeat #f9f9f9; }
+
 .clear {
   clear: both; }
 
@@ -554,34 +563,36 @@ img {
         .zone-products .product-card .tabs ul li:hover .fa-eye {
           border: 1px solid #09c3ed; }
 
-.zone-products .product-card .hotnews-slider .slider-wrap .card-slider {
-  padding: 20px 0; }
-  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure a {
-    height: 255px; }
-  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption h3 {
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 0; }
-  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption .name {
-    font-size: 17px;
-    font-weight: lighter;
-    margin-bottom: 10px; }
-  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption .price {
-    margin-bottom: 20px; }
-    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption .price .price-number {
-      color: #09c3ed;
-      font-size: 20px;
-      font-weight: bold; }
-  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure .info {
-    position: absolute;
-    font-weight: bold;
-    padding: 5px 15px;
-    background: #09c3ed;
-    top: 0;
-    left: 0;
-    color: #fbfbfb; }
-  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider:hover {
-    border: 1px solid #09c3ed; }
+.zone-products .product-card .hotnews-slider {
+  position: relative; }
+  .zone-products .product-card .hotnews-slider .slider-wrap .card-slider {
+    padding: 20px 0; }
+    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure a {
+      height: 255px; }
+    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption h3 {
+      font-size: 17px;
+      font-weight: bold;
+      margin-bottom: 0; }
+    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption .name {
+      font-size: 17px;
+      font-weight: lighter;
+      margin-bottom: 10px; }
+    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption .price {
+      margin-bottom: 20px; }
+      .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure figcaption .price .price-number {
+        color: #09c3ed;
+        font-size: 20px;
+        font-weight: bold; }
+    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider figure .info {
+      position: absolute;
+      font-weight: bold;
+      padding: 5px 15px;
+      background: #09c3ed;
+      top: 0;
+      left: 0;
+      color: #fbfbfb; }
+    .zone-products .product-card .hotnews-slider .slider-wrap .card-slider:hover {
+      border: 1px solid #09c3ed; }
 
 .zone-products .product-card .col-left .title-zone {
   background-color: #09c3ed;
@@ -667,6 +678,9 @@ img {
 .zone-products .product-card .col-right .products {
   position: relative;
   margin-top: 20px; }
+  @media (max-width: 1199px) {
+    .zone-products .product-card .col-right .products {
+      margin-top: 66px; } }
   .zone-products .product-card .col-right .products .slider-controls {
     position: absolute;
     width: 100%;

@@ -1,5 +1,10 @@
 ﻿(function () {
-  
+  $(window).load(function () {
+    $(".page-loader").fadeOut("slow");
+    console.log('0.5s nha');
+  });
+
+
   $('.main-slider').carousel({
     visible: 1,
     itemMargin: 0,
@@ -60,4 +65,4 @@
     console.log("its work");
   });
 
-} ())
+} ());

@@ -6,7 +6,7 @@
 
             $scope.setTab = function (newVal) {
                 $scope.tab = newVal;
-                if(test && newVal == 2){
+                if (test && newVal == 2) {
                     test = false;
                     $scope.check();
                 }
@@ -19,8 +19,11 @@
                         itemEqualHeight: 400,
                         itemMargin: 10,
                     });
-                    console.log("EFGH");
+
                 }, 0, 1);
+                $interval(function () {
+                    $('.tab-loader').fadeOut('slow');
+                }, 500, 1)
             };
             $scope.isSet = function (tabNum) {
                 return $scope.tab === tabNum;
@@ -32,7 +35,6 @@
                     itemEqualHeight: 400,
                     itemMargin: 10,
                 });
-                console.log("ABCD");
             }, 0, 1);
         }]);
 } ());
