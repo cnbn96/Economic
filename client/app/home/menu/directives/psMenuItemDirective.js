@@ -4,7 +4,7 @@
         return {
             restrict: 'E',
             required: '^psMenu',
-            templateUrl: 'app/menu/templates/psMenuItemTemplate.html',
+            templateUrl: 'app/home/menu/templates/psMenuItemTemplate.html',
             scope: {
                 label: '@',
                 icon: '@'

@@ -32,10 +32,10 @@ angular.module('app').controller('psMenuController', function ($scope, $timeout,
         var width = Math.max($($window).width(), $window.innerWidth);
         console.log("checkWIDTH: " + width)
         $scope.isHorizontal = width >= 1200;
-        /*if($scope.isMenuVisible && $scope.isHorizontal){
-            $scope.isMenuVisible = false;
-        } */              
-        $scope.isMenuButtonArrowVisible = !$scope.isHorizontal;      
+        $scope.isMenuButtonArrowVisible = !$scope.isHorizontal;
+        $rootScope.$broadcast('is-horizontal', {
+            isHorizontal : $scope.isHorizontal
+        });    
     };
     angular.element('.submenu').bind('hover',function(e){
         checkWidth();

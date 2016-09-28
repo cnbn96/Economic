@@ -8,7 +8,7 @@
             scope: {
                 byBrands: '@'
             },
-            templateUrl: "app/menu/templates/psMenuMegaListTemplate.html",
+            templateUrl: "app/home/menu/templates/psMenuMegaListTemplate.html",
             link: function (scope, ele) {
 
             }

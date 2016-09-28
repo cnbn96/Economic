@@ -5,7 +5,7 @@
         return {
             require: '^psMenu',
             replace: true,
-            templateUrl: 'app/menu/templates/psMenuGroupTemplate.html',
+            templateUrl: 'app/home/menu/templates/psMenuGroupTemplate.html',
             transclude: true,
             scope: {
                 label: '@',
@@ -40,7 +40,14 @@
                         scope.isOpen = false;
                         scope.subMenuHover = false;
                     }
+                };
+                /*scope.subMenuClicked = function (e) {
+                    $(e).parent().next().slideToggle();
                 }
+                $('.arrow').click(function(){
+                    console.log($(this).parent().next());
+                    $(this).parent().next().slideToggle();
+                });*/
                 scope.subMenuClicked = function () {
                     scope.isOpen = !scope.isOpen;
                     ctrl.setOpenMenuScope(scope);

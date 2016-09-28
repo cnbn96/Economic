@@ -33,7 +33,8 @@ p {
   margin: 5px 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #29292b; }
   a:hover {
     text-decoration: none;
     text-underline: none; }
@@ -199,6 +200,9 @@ img {
       .dropdown-submenu-visible .mega-group .list-mega .item i {
         font-size: 13px;
         margin-right: 5px; }
+      @media (max-width: 1199px) {
+        .dropdown-submenu-visible .mega-group .list-mega .item {
+          text-align: center !important; } }
     @media (max-width: 767px) {
       .dropdown-submenu-visible .mega-group {
         padding: 0 50px; } }
@@ -213,6 +217,13 @@ img {
 /*------------------------*/
 /*-------- HEADER --------*/
 /*------------------------*/
+.fix-header-bar {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(251, 251, 251, 0.75) !important;
+  transition: 0.5s all ease-in-out; }
+
 .header {
   background-color: #fbfbfb;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.45); }
@@ -229,12 +240,15 @@ img {
       line-height: 39px;
       margin: 30px 15px 30px 15px;
       font-size: 14px;
-      color: #e8e8e8;
+      color: #29292b;
       padding-left: 10px; }
-    .header .search-bar .search-icon {
+    .header .search-bar button {
+      padding: 9px 15px;
+      background: none;
       position: absolute;
-      right: 15px;
-      top: 38px; }
+      right: 2px;
+      top: 30px;
+      border: none; }
   .header .cart-hotline-cash {
     margin-top: 30px; }
     .header .cart-hotline-cash i.fa {
@@ -617,23 +631,48 @@ img {
       color: #fbfbfb;
       margin: 0;
       font-size: 30px; }
-.zone-products .product-card .col-left .nav-list-items .item {
-  font-size: 20px;
-  font-weight: lighter;
-  padding: 15px 30px;
-  border-bottom: 1px solid #b5b5bb; }
-  .zone-products .product-card .col-left .nav-list-items .item a {
-    color: #29292b;
-    text-decoration: none; }
-    .zone-products .product-card .col-left .nav-list-items .item a:hover {
+.zone-products .product-card .col-left .toggle-nav {
+  right: 25px;
+  top: 15px;
+  position: absolute;
+  text-decoration: none; }
+  .zone-products .product-card .col-left .toggle-nav .fa {
+    display: none;
+    background-color: #0daed2;
+    width: 35px;
+    color: #fbfbfb;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #b5b5bb;
+    border-radius: 4px; }
+    @media (max-width: 992px) {
+      .zone-products .product-card .col-left .toggle-nav .fa {
+        display: block !important; } }
+.zone-products .product-card .col-left .nav-list-items {
+  margin-top: 1px; }
+  .zone-products .product-card .col-left .nav-list-items .item {
+    font-size: 20px;
+    font-weight: lighter;
+    border-bottom: 1px solid #b5b5bb; }
+    .zone-products .product-card .col-left .nav-list-items .item a {
+      display: block;
+      line-height: 60px;
+      margin-left: 20px;
+      color: #29292b;
       text-decoration: none; }
-  .zone-products .product-card .col-left .nav-list-items .item:last-child {
-    border-bottom: none; }
-  .zone-products .product-card .col-left .nav-list-items .item:hover {
-    background: #09c3ed; }
-    .zone-products .product-card .col-left .nav-list-items .item:hover a {
-      font-weight: bold;
-      color: #fbfbfb; }
+      .zone-products .product-card .col-left .nav-list-items .item a:hover {
+        text-decoration: none; }
+    .zone-products .product-card .col-left .nav-list-items .item:last-child {
+      border-bottom: none; }
+    .zone-products .product-card .col-left .nav-list-items .item:hover {
+      background: #09c3ed; }
+      .zone-products .product-card .col-left .nav-list-items .item:hover a {
+        font-weight: bold;
+        color: #fbfbfb; }
+  @media (max-width: 992px) {
+    .zone-products .product-card .col-left .nav-list-items {
+      display: none; } }
 .zone-products .product-card .col-right .brands {
   position: relative;
   height: 68px;
@@ -647,6 +686,7 @@ img {
       margin: 0;
       text-align: center; }
       .zone-products .product-card .col-right .brands .all-brands .title a {
+        display: block;
         color: #29292b;
         height: 65px;
         text-transform: uppercase;

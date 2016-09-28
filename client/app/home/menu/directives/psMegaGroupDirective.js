@@ -8,7 +8,7 @@
             scope: {
                 listItems: '='
             },
-            templateUrl: "app/menu/templates/psMegaGroupTemplate.html"
+            templateUrl: "app/home/menu/templates/psMegaGroupTemplate.html"
         }
     });
 } ());

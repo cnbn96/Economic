@@ -1,9 +1,23 @@
 ﻿(function () {
-  $(window).load(function () {
+  var main = $('.main-content');
+  var headerBar = $('.header');
+  var windowz = $(window);
+  windowz.load(function () {
     $(".page-loader").fadeOut("slow");
-    console.log('0.5s nha');
   });
+  
+  if (windowz.width() > 1199) {
+    windowz.on("scroll", function () {
+      if (windowz.scrollTop()) {
+        headerBar.addClass('fix-header-bar');
+        main.css('padding-top', '100px');
+      }else{
+        headerBar.removeClass('fix-header-bar');
+        main.css('padding-top', '0');
+      }
+    });
 
+  }
 
   $('.main-slider').carousel({
     visible: 1,

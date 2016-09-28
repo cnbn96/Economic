@@ -4,7 +4,7 @@
         return {
             restrict: 'E',
             controller: 'psMenuController',
-            templateUrl: 'app/menu/templates/psMenuTemplate.html',
+            templateUrl: 'app/home/menu/templates/psMenuTemplate.html',
             scope: {
 
             },
@@ -13,7 +13,6 @@
                 angular.element($window).bind('resize', function () {
                     scope.width = $window.innerWidth;
                     scope.$digest();
-                    console.log(scope.width);
                 });
             }
 

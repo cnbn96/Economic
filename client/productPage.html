@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Economic</title>
+    <link rel="stylesheet" href="assets\fonts\fonts-awesome\font-awesome.min.css">
+    <link href="assets\fonts\oswald-fonts.css" rel="stylesheet">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets\css\ng-animation.css">
+    <link rel="stylesheet" href="assets\css\appProduct.css">
+    <link rel="stylesheet" href="assets\css\app.css">
+    <style>
+        .ng-show {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <div class="page-loader loader"></div>
+
+    <!----BEGIN HEADER ---->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo col-xs-12 col-lg-3">
+                    <img src="assets\images\logo-icon.png" alt="SAMPLELOGO" class="header-logo">
+                </div>
+                <div class="search-bar form-group col-xs-12 col-lg-5">
+                    <input type="text" class="search-box" placeholder="Search">
+                    <button><span class="search-icon">
+                        <img src="assets\images\search-icon.png">
+                    </span></button>
+                </div>
+                <div class="cart-hotline-cash col-xs-12 col-lg-4">
+                    <div class="cart left">
+                        <a href="#"><img src="assets\images\cart-icon.png" alt="CART"></a>
+                        <span class="number-cart">1</span>
+                    </div>
+                    <div class="hotline-cash right">
+                        <div class="hotline">
+                            <i class="fa fa-comments-o"></i>
+                            <div class="text">
+                                <span class="title">
+                                Hotline <br>
+                            </span>
+                                <span class="number">
+                                01203214160
+                            </span>
+                            </div>
+                        </div>
+                        <div class="cash">
+                            <i class="fa fa-truck"></i>
+                            <div class="text">
+                                <span class="title">Cash on<br>Delivery 
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!----END HEADER ---->
+
+    <!----BEGIN MAIN-CONTENT ---->
+    <div class="main-content">
+        <div class="main-menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-3">
+                        <div class="vertical-category-menu">
+                            <h4 class="title">
+                                <span class="left">
+                                    <i class="fa fa-bars"></i>
+                                </span>
+                                <span class="title-menu">
+                                    CATEGORIES
+                                </span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-9">
+                        <div class="tags">
+                            <a href="home">
+                                Home
+                                <span class="arrow">
+                                    <i class="fa fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <a href="category">
+                                Gaming Gear
+                                <span class="arrow">
+                                    <i class="fa fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <a href="brand">
+                                Steelseries
+                                <span class="arrow">
+                                    <i class="fa fa-chevron-right"></i>
+                                </span>
+                            </a>
+                            <a href="product">
+                                Rival 700
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-3">
+                            <div class="col-left">
+                                <div class="sidebar">
+                                    <h4 class="title-sidebar">
+                                        MENU PRODUCTS
+                                    </h4>
+                                    <div class="panel-group">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span class="fa fa-plus-square" data-toggle="collapse" data-target="#collapse1"></span>
+                                                    <a href="#">Audio</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse1" class="tab-panel panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="sub-parent">
+                                                        <li class="has-sub active">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title active">
+                                                    <span class="fa fa-plus-square" data-toggle="collapse" data-target="#collapse1"></span>
+                                                    <a href="#">Gaming Gear</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse1" class="tab-panel panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="sub-parent">
+                                                        <li class="has-sub active">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span class="fa fa-plus-square" data-toggle="collapse" data-target="#collapse1"></span>
+                                                    <a href="#">Speaker</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse1" class="tab-panel panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="sub-parent">
+                                                        <li class="has-sub active">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <h4 class="panel-title">
+                                                    <span class="fa fa-plus-square" data-toggle="collapse" data-target="#collapse1"></span>
+                                                    <a href="#">Computer</a>
+                                                </h4>
+                                            </div>
+                                            <div id="collapse1" class="tab-panel panel-collapse collapse">
+                                                <div class="panel-body">
+                                                    <ul class="sub-parent">
+                                                        <li class="has-sub active">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="has-sub">
+                                                            <a href="#">Gaming Mice</a>
+                                                            <ul class="sub-child">
+                                                                <li><a href="#">Wired Mice</a></li>
+                                                                <li><a href="#">Wireless Mice</a></li>
+                                                                <li><a href="#">Office Mice</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar">
+                                    <h4 class="title-sidebar">
+                                        BRANDS
+                                    </h4>
+                                    <ul class="brands">
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Corsair">Corsair</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="MSI">MSI</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Ozone">Ozone</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Logitech">Logitech</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Steelseries">Steelseries</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Corsair">Corsair</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="MSI">MSI</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Ozone">Ozone</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-square-o"></i>
+                                            <a href="#" title="Logitech">Logitech</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="suggest-products">
+                                    <h4 class="title">
+                                        MORE LIKE THIS
+                                    </h4>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-9">
+                            <div class="col-right">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---- BEGIN FOOTER ---->
+    <footer class="footer">
+        <div class="footer-email">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-wrap">
+                        <div class="form-email col-xs-12 col-lg-9">
+                            <div class="row">
+                                <form action="" class="form-horizontal">
+                                    <div class="form-group ">
+                                        <label for="email" class="control-label col-xs-12 col-lg-6">GET THE LASTEST GEARS & MORE</MORE></label>
+                                        <div class="input-group col-xs-12 col-lg-6">
+                                            <input type="email" class="form-control" id="subemail" placeholder="Enter E-Mail Address">
+                                            <button type="submit" class="sign-up-btn">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="address col-xs-12 col-lg-3 text-center">
+                            <i class="fa fa-map-marker"></i>
+                            <h4>Address</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="footer-wrap">
+                    <div class="main-column col-xs-6 col-lg-3">
+                        <ul class="list-items">
+                            <h3 class="title"><a href="#">Audio</a></h3>
+                            <li class="item"><a href="#">Headphone</a></li>
+                            <li class="item"><a href="#">DAC / Headamp</a></li>
+                            <li class="item"><a href="#">Music Players</a></li>
+                            <li class="item"><a href="#">Audio Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-column col-xs-6 col-lg-3">
+                        <ul class="list-items">
+                            <h3 class="title"><a href="#">Computer</a></h3>
+                            <li class="item"><a href="#">Gaming Laptops</a></li>
+                            <li class="item"><a href="#">Gaming Desktops</a></li>
+                            <li class="item"><a href="#">Monitors</a></li>
+                            <li class="item"><a href="#">Computer Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-column col-xs-6 col-lg-3">
+                        <ul class="list-items">
+                            <h3 class="title"><a href="#">Gaming Gear</a></h3>
+                            <li class="item"><a href="#">Gaming Keyboards</a></li>
+                            <li class="item"><a href="#">Gaming Mice</a></li>
+                            <li class="item"><a href="#">Gaming Headsets</a></li>
+                            <li class="item"><a href="#">Gaming Mousepads</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-column col-xs-6 col-lg-3">
+                        <ul class="list-items">
+                            <h3 class="title"><a href="#">Speaker</a></h3>
+                            <li class="item"><a href="#">Portable Speakers</a></li>
+                            <li class="item"><a href="#">Computer Speakers</a></li>
+                            <li class="item"><a href="#">Soundbar Speakers</a></li>
+                            <li class="item"><a href="#">Speaker Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="social-testimonials">
+                    <div class="social col-xs-12 col-lg-6">
+                        <h3 class="title">Follow us on <a href="#">Social Networks</a></h3>
+                        <ul>
+                            <li>
+                                <h4>On Facebook</h4>
+                                <div class="fb-page" data-href="https://www.facebook.com/LoLBestVideosFanpage/" data-width="550" data-height="450" data-small-header="false"
+                                    data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/LoLBestVideosFanpage/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LoLBestVideosFanpage/">League of Legends Best Video</a></blockquote>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>On Instagram</h4>
+                                <div id="instagram">
+                                    <a class="feedaz" href="https://www.instagram.com/p/BJiT7LCDsAr/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14099739_290187534692169_988430375_n.jpg?ig_cache_key=MTMyNDcwODg2OTU3ODg2NjczMQ%3D%3D.2"></a>
+                                    <a class="feedaz" href="https://www.instagram.com/p/BJZhfx9DfR3/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14031616_1791575137733194_242697328_n.jpg?ig_cache_key=MTMyMjIzNTI4NTA4NjI3MDU4Mw%3D%3D.2"></a>
+                                    <a class="feedaz" href="https://www.instagram.com/p/BJTAoAKjL17/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13687027_633530833494293_729498020_n.jpg?ig_cache_key=MTMyMDQwMTg2NDcwNTc1MjQ0Mw%3D%3D.2"></a>
+                                    <a class="feedaz" href="https://www.instagram.com/p/BJQZ-_JDQBs/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/14072969_596983923838779_902477846_n.jpg?ig_cache_key=MTMxOTY2ODk3MDM4NzQ3MjQ5Mg%3D%3D.2"></a>
+                                    <a class="feedaz" href="https://www.instagram.com/p/BJLOgRZDOJu/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13712561_1087662207980804_1074417587_n.jpg?ig_cache_key=MTMxODIxMTEwNjI4NDI5ODg2Mg%3D%3D.2"></a>
+                                    <a class="feedaz" href="https://www.instagram.com/p/BJIt3anDYY0/"><img src="https://scontent.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/13658883_1227483763950108_1255772728_n.jpg?ig_cache_key=MTMxNzUwNDYxMTI0MjU3NTQxMg%3D%3D.2"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="testimonials col-xs-12 col-lg-6">
+                        <h3 class="title">Testimonials</h3>
+                        <div class="testimonial">
+                            <div class="row">
+                                <div class="avatar col-xs-3">
+                                    <img src="assets\images\avatar.jpg" alt="Nam Binh">
+                                    <span class="author">Nam Bình</span>
+                                </div>
+                                <div class="text col-xs-9">
+                                    <blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="row">
+                                <div class="avatar col-xs-3">
+                                    <img src="assets\images\avatar.jpg" alt="Nam Binh">
+                                    <span class="author">Nam Bình</span>
+                                </div>
+                                <div class="text col-xs-9">
+                                    <blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="row">
+                                <div class="avatar col-xs-3">
+                                    <img src="assets\images\avatar.jpg" alt="Nam Binh">
+                                    <span class="author">Nam Bình</span>
+                                </div>
+                                <div class="text col-xs-9">
+                                    <blockqoute>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</blockqoute>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="footer-utility text-center">
+                        <ul>
+                            <li><a href="#">Home Page</a></li>
+                            <li><a href="#">Shipping Fee</a></li>
+                            <li><a href="#">Payment Methods</a></li>
+                            <li><a href="#">Warranty Policy</a></li>
+                            <li><a href="#">Repair Services</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="copyright text-center">
+                        Copyright © 2016 <a href="http://facebook.com/nguyennambinh11">cnbn96</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!---- END FOOTER ------>
+
+
+
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=1641551249491668";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'))
+    </script>
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui-router.min.js"></script>
+    <script src="Scripts/angular-animate.min.js"></script>
+    <!-- APP MODULE -->
+    <script src="app/appModule.js"></script>
+    <script src="app/appConfig.js"></script>
+    <script src="app/product/appProductModule.js"></script>
+
+    <!-- APP CONTROLLERS -->
+    <script src="app/home/homeController.js"></script>
+    <script src="app/menu/controllers/psMenuController.js"></script>
+    <script src="app/product/controllers/psTabNewProductController.js"></script>
+
+    <!-- APP DIRECTIVES -->
+    <script src="app/menu/directives/psMenuDirective.js"></script>
+    <script src="app/menu/directives/psMenuGroupDirective.js"></script>
+    <script src="app/menu/directives/psMenuItemDirective.js"></script>
+    <script src="app/menu/directives/psMenuMegaListDirective.js"></script>
+    <script src="app/menu/directives/psMegaGroupDirective.js"></script>
+    <script src="app/product/directives/psTabNewProductDirective.js"></script>
+    <script src="app/product/directives/psBrandsSliderDirective.js"></script>
+    <script src="app/product/directives/psProductDirective.js"></script>
+    <!-- APP SERVICES -->
+
+
+    <!-- APP ELSE -->
+
+    <script src="assets/js/responsiveCarousel.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
