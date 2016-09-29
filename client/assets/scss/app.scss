@@ -188,13 +188,64 @@
 		margin: 0;
 		position: relative;
 		.search-box{
-			width: 100%;
-			height: 39px;
-			line-height: 39px;
-			margin: 30px 15px 30px 15px;
-			font-size: 14px;
-			color: $dark;
-			padding-left: 10px;
+			position: relative;
+			.search-input{
+				width: 100%;
+				height: 39px;
+				line-height: 39px;
+				margin: 30px 15px 30px 15px;
+				font-size: 14px;
+				color: $dark;
+				padding-left: 10px;
+			}
+			.autocomplete-products{
+				display:none;
+				position: absolute;
+				margin-left: 15px;
+				width: 100%;
+    			top: 70px;
+				z-index: 99;
+				.autocomplete-list{
+					background-color: $white;
+					.item{
+						padding: 15px 10px;
+						border-bottom: 1px solid $dark-line;
+						.product{
+							.image{
+								background-color: $white;
+								float: left;
+								padding: 0;
+								text-align: center;
+								height: 80px;
+								width: 80px;
+								margin-right: 15px;
+							}
+							.details{
+								display: inline-block;
+								font-size: 17px;
+								line-height: 27px;
+								margin-left: 15px;
+								.brand{									
+									font-weight: lighter;									
+								}
+								.name{									
+									font-weight: normal;									
+									color: $light-blue;
+								}
+								.price{
+									font-weight: bold;
+									&::after{
+										content: '₫';
+									}
+								}
+							}
+						}
+						&:hover{
+							background-color: #d9d9da;
+						}
+					}
+				}			
+			}
 		}
 		button{
 			padding: 9px 15px;

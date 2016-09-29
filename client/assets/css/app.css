@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
@@ -235,13 +236,51 @@ img {
     margin: 0;
     position: relative; }
     .header .search-bar .search-box {
-      width: 100%;
-      height: 39px;
-      line-height: 39px;
-      margin: 30px 15px 30px 15px;
-      font-size: 14px;
-      color: #29292b;
-      padding-left: 10px; }
+      position: relative; }
+      .header .search-bar .search-box .search-input {
+        width: 100%;
+        height: 39px;
+        line-height: 39px;
+        margin: 30px 15px 30px 15px;
+        font-size: 14px;
+        color: #29292b;
+        padding-left: 10px; }
+      .header .search-bar .search-box .autocomplete-products {
+        display: none;
+        position: absolute;
+        margin-left: 15px;
+        width: 100%;
+        top: 70px;
+        z-index: 99; }
+        .header .search-bar .search-box .autocomplete-products .autocomplete-list {
+          background-color: #fbfbfb; }
+          .header .search-bar .search-box .autocomplete-products .autocomplete-list .item {
+            padding: 15px 10px;
+            border-bottom: 1px solid #b5b5bb; }
+            .header .search-bar .search-box .autocomplete-products .autocomplete-list .item .product .image {
+              background-color: #fbfbfb;
+              float: left;
+              padding: 0;
+              text-align: center;
+              height: 80px;
+              width: 80px;
+              margin-right: 15px; }
+            .header .search-bar .search-box .autocomplete-products .autocomplete-list .item .product .details {
+              display: inline-block;
+              font-size: 17px;
+              line-height: 27px;
+              margin-left: 15px; }
+              .header .search-bar .search-box .autocomplete-products .autocomplete-list .item .product .details .brand {
+                font-weight: lighter; }
+              .header .search-bar .search-box .autocomplete-products .autocomplete-list .item .product .details .name {
+                font-weight: normal;
+                color: #09c3ed; }
+              .header .search-bar .search-box .autocomplete-products .autocomplete-list .item .product .details .price {
+                font-weight: bold; }
+                .header .search-bar .search-box .autocomplete-products .autocomplete-list .item .product .details .price::after {
+                  content: '₫'; }
+            .header .search-bar .search-box .autocomplete-products .autocomplete-list .item:hover {
+              background-color: #d9d9da; }
     .header .search-bar button {
       padding: 9px 15px;
       background: none;

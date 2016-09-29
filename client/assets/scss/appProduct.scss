@@ -2,6 +2,8 @@
 @import "_global";
 /*---------MAIN MENU---------*/
 
+
+
 .main-menu{
     .vertical-category-menu{
         background-color: $dark-blue;
@@ -44,4 +46,138 @@
 .main{
     background-color: $white;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    .col-left{
+        .sidebar{
+            margin-top: 30px;
+            padding-bottom: 20px;
+            background-color: #d9d9da;
+            .title-sidebar{
+                font-size: 20px;
+                color: $light-blue;
+                margin-left: 15px;
+                padding-top: 30px;
+            }
+            .panel-group{
+                margin-top: 10px;
+                font-size: 16px;
+                margin-bottom: 0;
+                .panel{
+                    background-color: #d9d9da;
+                    border: none; 
+                    .panel-heading{
+                        padding: 5px 15px;
+                        background-color: #d9d9da;
+                        border: none;
+                        .panel-title{
+                            a{
+                                margin-left: 5px;
+                            }
+                            &.active{
+                                color: $light-blue;
+                                a{
+                                    color: $light-blue;
+                                }
+                            }
+                        }
+                    }
+                    .panel-body{
+                        padding: 0;
+                        .sub-parent{
+                            margin-left: 35px;
+                            .has-sub{
+                                margin-top: 10px;
+                                .sub-child{
+                                    display: none;
+                                    margin-left: 20px;
+                                    li{
+                                        margin-top: 10px;                                    
+                                    }
+                                }
+                                &.active{
+                                    .sub-child{
+                                        display: block;
+                                    }
+                                    color: $light-blue;
+                                    a{
+                                        color: $light-blue;
+                                    }
+                                }
+                            }                                                        
+                        }
+                    }
+                }
+            }
+            .brands{
+                margin-left: 15px;
+                li{
+                    margin-top: 10px;
+                    &.active{
+                        color: $light-blue;
+                        a{
+                            color: $light-blue;
+                        }
+                    }
+                }
+            }
+        }
+        .suggest-products{
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 1px solid $dark-line;
+            background-color: #d9d9da;
+            text-align: center;
+            .title{
+                font-size: 25px;
+                color: $light-blue;
+                background-color: $white;
+                padding: 8px 0;
+                border-bottom: 1px solid $dark-line;
+            }
+            .suggest-list{
+                background-color: #d9d9da;
+                .suggest-item{
+                    margin: 10px;
+                    border-radius: 2px;
+                    box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+                    background-color: $white;
+                    figure{
+						a{
+							height: 255px;
+						}
+						figcaption{									
+							h3{
+								font-size: 17px;
+								font-weight: bold;
+								margin-bottom: 0;
+							}
+							.name{
+								font-size: 17px;
+								font-weight: lighter;
+							}
+							.price{
+								margin-bottom: 20px;
+								.price-number{
+									color: $light-blue;
+									font-size: 20px;
+									font-weight: bold;
+								}
+							}
+						}
+						.info{
+							position: absolute;
+							font-weight: bold;
+							padding: 5px 15px;
+							background: $light-blue;
+							top: 0;
+							left: 0;
+							color: $white;								
+						}																							
+					}
+                }
+            }
+        }
+    }
+    .col-right{
+
+    }
 }
