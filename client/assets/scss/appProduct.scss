@@ -1,14 +1,17 @@
 @import "_colors";
 @import "_global";
+
+
+
+
 /*---------MAIN MENU---------*/
-
-
 
 .main-menu{
     .vertical-category-menu{
         background-color: $dark-blue;
         height: 55px;
         color: $white;
+        cursor: pointer;
         .title{
             margin-left: 30px;
             line-height: 55px;
@@ -42,11 +45,15 @@
 }
 
 
-
+/*---------MAIN CONTENT---------*/
 .main{
     background-color: $white;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+
+    /*---------BEGIN COLUMN LEFT---------*/
     .col-left{
+
+        /*---------BEGIN SIDEBAR---------*/
         .sidebar{
             margin-top: 30px;
             padding-bottom: 20px;
@@ -119,7 +126,7 @@
                     }
                 }
             }
-        }
+        }/*---------END SIDEBAR---------*/
         .suggest-products{
             margin-top: 30px;
             margin-bottom: 30px;
@@ -155,7 +162,6 @@
 								font-weight: lighter;
 							}
 							.price{
-								margin-bottom: 20px;
 								.price-number{
 									color: $light-blue;
 									font-size: 20px;
@@ -176,8 +182,168 @@
                 }
             }
         }
-    }
+    }/*---------END COLUMN LEFT---------*/
+
+    /*---------BEGIN COLUMN RIGHT---------*/
     .col-right{
 
-    }
+        /*---------BEGIN IMAGE DETAIL---------*/
+        .product-detail{
+            .product-image{
+                margin-top: 30px;
+                .zoom-image{
+                    height: 450px;
+                    display: table;
+                    transition: all 0.5s linear;
+                    a{
+                        height: 100%;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    &:hover{
+                        background-color: rgba(41, 41, 43,0.3);
+
+                    }
+                }
+                .owl-image{
+                    margin-top: 10px;
+                    .owl-group{
+                        .item{
+                            width: 102px;
+                            height: 102px;
+                            margin-left: 5px;
+                            position: relative;
+                            display: inline-block;
+                            a{
+                                height: 100%;
+                                img{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                }                                
+                            }
+                            &:hover{
+                                border: 1px solid $light-blue;
+                            }
+                        }                        
+                    }
+                }
+            }
+        }/*---------END IMAGE DETAIL---------*/
+
+        /*---------BEGIN PRODUCT DETAILS---------*/
+        .product-title{
+            margin-top: 30px;
+            padding-bottom: 50px;
+            font-size: 42px;
+            font-weight: lighter;
+            border-bottom: 1px solid $dark-line;            
+        }
+        .product-content{
+            font-size: 20px;
+            font-weight: lighter;
+            border-bottom: 1px solid $dark-line;
+            padding-bottom: 75px;
+            .detail{
+                table{
+                    tr{
+                        td{
+                            padding-right: 40px;
+                            padding-top: 10px;
+                            &.brand{
+                                a{
+                                    color: $light-blue;
+                                    font-weight: bold;
+                                }
+                            }
+                            &.colors{
+                                .color{
+                                    width: 30px;
+                                    height: 30px;
+                                    display: inline-block;
+                                    border: 1px solid $dark-line;
+                                    &:hover{
+                                        border: 3px solid $light-blue;
+                                    }
+                                }
+                            }
+                            &.price{
+                                color: $light-blue;
+                                font-size: 30px;
+                                font-weight: bold;
+                            }
+                        }                    
+                    }
+                }
+
+                .add-order-submit{
+                    font-size: 20px;
+                    font-weight: normal;                    
+                    .action-btn{
+                        width: 150px;
+                        height: 42px;
+                        background-color: $light-blue;
+                        color: $white; 
+                        border: none;
+                    }
+                    .add-box{
+                        position: relative;
+                        img{
+                            width: 34px;
+                            height: 42px;
+                        }
+                        .tips{     
+                            position: absolute;
+                            left: 90%;
+                            top: 100%;
+                            width: 34px;                       
+                            .how-to{
+                                margin-left: 17px;
+                                width: 100px;
+                                position: absolute;
+                                a{
+                                    i.fa{
+                                        color: $light-blue;
+                                    }
+                                    .text{
+                                        font-weight: lighter;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .actions{
+            margin-top: 10px;
+            & > .order-fb{
+                font-size: 20px;
+                color: $white;
+                line-height: 42px;
+                text-align: center;
+                background-color: #0084ff;
+                height: 42px;
+                width: 230px;                
+                display: block;
+                i{
+                    margin-right: 5px;
+                }
+            }
+            .rating{
+                margin-top: 40px;
+                .star{
+                    color: $light-blue;
+                    font-size: 30px;
+                    font-weight: normal;
+                }
+                .point{
+                    margin-left: 20px;
+                    font-size: 19px;
+                }
+            }
+        }
+    }/*---------END COLUMN RIGHT---------*/
 }
