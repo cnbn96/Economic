@@ -2,21 +2,23 @@
   var main = $('.main-content');
   var headerBar = $('.header');
   var windowz = $(window);
+  var windowWidth = Math.max(windowz.width(), windowz.innerWidth());
   windowz.load(function () {
     $(".page-loader").fadeOut("slow");
   });
-  
-  if (windowz.width() > 1199) {
+
+  if (windowWidth > 1199) {
     windowz.on("scroll", function () {
       if (windowz.scrollTop()) {
         headerBar.addClass('fix-header-bar');
         main.css('padding-top', '100px');
-      }else{
+      } else {
         headerBar.removeClass('fix-header-bar');
         main.css('padding-top', '0');
       }
     });
 
+    
   }
 
   $('.main-slider').carousel({
@@ -78,5 +80,4 @@
     $('.nav-item').slideToggle();
     console.log("its work");
   });
-
 } ());

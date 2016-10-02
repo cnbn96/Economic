@@ -338,7 +338,7 @@ img {
       /*@media (max-width: 1199px){
       	display: block;
       }*/ }
-      .main-content .navbar .main-menu .nav-vertical .title {
+      .main-content .navbar .main-menu .nav-vertical > .title {
         position: relative;
         text-align: left;
         padding-left: 15px;
@@ -348,12 +348,12 @@ img {
         font-size: 20px;
         cursor: pointer;
         position: relative; }
-        .main-content .navbar .main-menu .nav-vertical .title i {
+        .main-content .navbar .main-menu .nav-vertical > .title i {
           font-size: 30px;
           margin-right: 5px; }
-        .main-content .navbar .main-menu .nav-vertical .title .text {
+        .main-content .navbar .main-menu .nav-vertical > .title .text {
           display: inline-block; }
-        .main-content .navbar .main-menu .nav-vertical .title .arrow {
+        .main-content .navbar .main-menu .nav-vertical > .title .arrow {
           position: absolute;
           right: 20px;
           top: 20%; }
