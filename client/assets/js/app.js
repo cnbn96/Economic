@@ -10,10 +10,12 @@
   if (windowWidth > 1199) {
     windowz.on("scroll", function () {
       if (windowz.scrollTop()) {
+        headerBar.removeClass('header');
         headerBar.addClass('fix-header-bar');
         main.css('padding-top', '100px');
       } else {
         headerBar.removeClass('fix-header-bar');
+        headerBar.addClass('header');
         main.css('padding-top', '0');
       }
     });

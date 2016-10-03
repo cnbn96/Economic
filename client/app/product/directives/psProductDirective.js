@@ -26,7 +26,9 @@
                 $('.toggle-nav').click(function () {
                     var o = $(this);
                     var navList = o.next();                   
-                    navList.slideToggle('slow')
+                    navList.slideToggle('slow',function(){
+                        o.find('.show-nav').toggleClass('fa-chevron-down fa-times');
+                    });
                 });
             },
         }

@@ -83,7 +83,7 @@ img {
   border: 2px solid white; }
 
 /*Change the colour*/
-.active img {
+.active > img {
   border: 2px solid #09c3ed !important; }
 
 .image-zoom-elevate {
@@ -139,7 +139,7 @@ img {
         top: -49px;
         left: 104%;
         position: absolute;
-        background-color: #e8e8e8;
+        background-color: #efefef;
         border: 1px solid #b5b5bb; }
         .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .row {
           padding: 0;
@@ -209,7 +209,9 @@ img {
     .main .col-left .sidebar {
       margin-top: 30px;
       padding-bottom: 20px;
-      background-color: #d9d9da; }
+      background-color: #efefef;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4); }
       .main .col-left .sidebar .title-sidebar {
         font-size: 20px;
         color: #09c3ed;
@@ -220,11 +222,11 @@ img {
         font-size: 16px;
         margin-bottom: 0; }
         .main .col-left .sidebar .panel-group .panel {
-          background-color: #d9d9da;
+          background-color: #efefef;
           border: none; }
           .main .col-left .sidebar .panel-group .panel .panel-heading {
             padding: 5px 15px;
-            background-color: #d9d9da;
+            background-color: #efefef;
             border: none; }
             .main .col-left .sidebar .panel-group .panel .panel-heading .panel-title a {
               margin-left: 5px; }
@@ -233,6 +235,7 @@ img {
               .main .col-left .sidebar .panel-group .panel .panel-heading .panel-title.active a {
                 color: #09c3ed; }
           .main .col-left .sidebar .panel-group .panel .panel-body {
+            border: none;
             padding: 0; }
             .main .col-left .sidebar .panel-group .panel .panel-body .sub-parent {
               margin-left: 35px; }
@@ -261,7 +264,8 @@ img {
       margin-top: 30px;
       margin-bottom: 30px;
       border: 1px solid #b5b5bb;
-      background-color: #d9d9da;
+      background-color: #efefef;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
       text-align: center; }
       .main .col-left .suggest-products .title {
         font-size: 25px;
@@ -270,11 +274,11 @@ img {
         padding: 8px 0;
         border-bottom: 1px solid #b5b5bb; }
       .main .col-left .suggest-products .suggest-list {
-        background-color: #d9d9da; }
+        background-color: #efefef; }
         .main .col-left .suggest-products .suggest-list .suggest-item {
           margin: 10px;
           border-radius: 2px;
-          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
           background-color: #fbfbfb; }
           .main .col-left .suggest-products .suggest-list .suggest-item figure a {
             height: 255px; }
@@ -471,7 +475,7 @@ img {
       height: 240px;
       max-height: 240px;
       overflow-y: scroll;
-      background-color: #e8e8e8; }
+      background-color: #efefef; }
       .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel::-webkit-scrollbar {
         width: 15px; }
       .main .rating-and-reviews .tab-content #rating .reviews-detail .reviews-panel::-webkit-scrollbar-thumb {

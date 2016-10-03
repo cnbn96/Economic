@@ -11,7 +11,7 @@
 }
 /*Change the colour*/
 
-.active img {
+.active > img {
     border: 2px solid #09c3ed !important;
 }
 
@@ -79,7 +79,7 @@
                     top: -49px;
                     left: 104%;
                     position: absolute;
-                    background-color: $grey-white;
+                    background-color: $grey-white2;
                     border: 1px solid $dark-line;
                     .row{
                         padding: 0;
@@ -171,7 +171,9 @@
         .sidebar{
             margin-top: 30px;
             padding-bottom: 20px;
-            background-color: #d9d9da;
+            background-color: $grey-white2;
+            border: 1px solid $grey-white;
+            box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
             .title-sidebar{
                 font-size: 20px;
                 color: $light-blue;
@@ -183,11 +185,11 @@
                 font-size: 16px;
                 margin-bottom: 0;
                 .panel{
-                    background-color: #d9d9da;
+                    background-color:  $grey-white2;
                     border: none; 
                     .panel-heading{
                         padding: 5px 15px;
-                        background-color: #d9d9da;
+                        background-color:  $grey-white2;
                         border: none;
                         .panel-title{
                             a{
@@ -202,6 +204,7 @@
                         }
                     }
                     .panel-body{
+                        border: none;
                         padding: 0;
                         .sub-parent{
                             margin-left: 35px;
@@ -245,7 +248,8 @@
             margin-top: 30px;
             margin-bottom: 30px;
             border: 1px solid $dark-line;
-            background-color: #d9d9da;
+            background-color: $grey-white2;
+            box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
             text-align: center;
             .title{
                 font-size: 25px;
@@ -254,12 +258,13 @@
                 padding: 8px 0;
                 border-bottom: 1px solid $dark-line;
             }
+
             .suggest-list{
-                background-color: #d9d9da;
+                background-color: $grey-white2;
                 .suggest-item{
                     margin: 10px;
-                    border-radius: 2px;
-                    box-shadow: 0 0 4px 0 rgba(0,0,0,0.4);
+                    border-radius: 2px;                    
+                    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
                     background-color: $white;
                     figure{
 						a{
@@ -553,7 +558,7 @@
                         height: 240px;
                         max-height: 240px;
                         overflow-y: scroll;                        
-                        background-color: $grey-white;
+                        background-color: $grey-white2;
                         &::-webkit-scrollbar{
                             width: 15px;
                         }                        
