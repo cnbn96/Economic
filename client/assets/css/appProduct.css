@@ -75,6 +75,25 @@ img {
 .height-auto {
   height: auto !important; }
 
+/*---------FOR ANIMATION------------*/
+@keyframes MENU {
+  from {
+    overflow: hidden;
+    height: 0; }
+  to {
+    overflow: visible;
+    height: 55px; } }
+.animation-logo {
+  animation: LOGO .5s;
+  animation-fill-mode: both; }
+
+@keyframes LOGO {
+  from {
+    transform: scale(0.7);
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
 /*---------STYLE FOR ZOOM ELEVATE----------*/
 .zoomLens {
   width: 130px; }
@@ -95,7 +114,11 @@ img {
   height: 55px;
   color: #fbfbfb;
   cursor: pointer;
+  z-index: 1001;
   position: relative; }
+  .main-menu .vertical-category-menu.animation-menu {
+    animation: MENU .5s;
+    animation-fill-mode: both; }
   .main-menu .vertical-category-menu > .title {
     margin-left: 30px;
     line-height: 55px; }
@@ -183,6 +206,11 @@ img {
       .main-menu .vertical-category-menu .category-menu-list-item .category-item:hover {
         background-color: #09c3ed;
         color: #fbfbfb; }
+.main-menu .fix-menu {
+  position: fixed;
+  width: 262px;
+  z-index: 1001;
+  top: 10px; }
 .main-menu .tags {
   font-size: 15px;
   line-height: 55px;

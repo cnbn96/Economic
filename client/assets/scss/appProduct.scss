@@ -1,6 +1,36 @@
 @import "_colors";
 @import "_global";
 
+
+
+
+
+
+/*---------FOR ANIMATION------------*/
+@keyframes MENU {
+    from {
+        overflow: hidden;
+        height: 0;
+    }
+    to {
+        overflow: visible;
+        height: 55px;
+    }
+}
+.animation-logo  {
+    animation: LOGO .5s;
+    animation-fill-mode: both
+} 
+@keyframes LOGO {
+    from {
+        transform:scale(0.7);
+        opacity:0;
+    }
+    to {
+        transform:scale(1);
+        opacity:1;
+    }
+}
 /*---------STYLE FOR ZOOM ELEVATE----------*/
 .zoomLens {
     width: 130px;
@@ -27,7 +57,12 @@
         height: 55px;
         color: $white;
         cursor: pointer;
+        z-index: 1001;
         position: relative;
+        &.animation-menu  {
+            animation: MENU .5s;
+            animation-fill-mode: both
+        }        
         > .title{
             margin-left: 30px;
             line-height: 55px;
@@ -141,6 +176,12 @@
             }
         }
     }
+    .fix-menu{
+        position: fixed;
+        width: 262px;
+        z-index: 1001;
+        top: 10px;
+    }    
     .tags{
         font-size: 15px;
         line-height: 55px;

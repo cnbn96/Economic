@@ -218,12 +218,23 @@ img {
 /*------------------------*/
 /*-------- HEADER --------*/
 /*------------------------*/
+.animation {
+  animation: SHW .5s;
+  animation-fill-mode: both; }
+
+@keyframes SHW {
+  from {
+    overflow: hidden;
+    height: 0; }
+  to {
+    overflow: visible;
+    height: 73px; } }
 .fix-header-bar {
   z-index: 1000;
   position: fixed;
   width: 100%;
-  background-color: rgba(251, 251, 251, 0.75) !important;
-  transition: 0.5s all ease-in-out; }
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.45);
+  background-color: rgba(251, 251, 251, 0.75) !important; }
   .fix-header-bar .logo {
     text-align: center;
     position: relative;
@@ -252,6 +263,7 @@ img {
         line-height: 39px;
         font-size: 14px;
         color: #29292b;
+        padding-right: 42px;
         padding-left: 10px; }
       .fix-header-bar .search-bar .search-box .autocomplete-products {
         display: none;
@@ -334,12 +346,19 @@ img {
 
 .header {
   background-color: #fbfbfb;
-  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.45);
-  transition: 0.5s all ease-in-out; }
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.45); }
   .header .logo {
-    text-align: center; }
-    .header .logo > img {
-      margin: 30px 15px 30px 30px; }
+    text-align: center;
+    height: 99px; }
+    .header .logo .header-logo {
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%; }
+      .header .logo .header-logo::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%; }
   .header .search-bar {
     margin: 0;
     position: relative; }
@@ -352,6 +371,7 @@ img {
         margin: 30px 15px 30px 15px;
         font-size: 14px;
         color: #29292b;
+        padding-right: 42px;
         padding-left: 10px; }
       .header .search-bar .search-box .autocomplete-products {
         display: none;

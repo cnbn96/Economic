@@ -3,18 +3,29 @@
     var windowWidth = Math.max(windowz.width(), windowz.innerWidth());
 
     if (windowWidth > 1199) {
+        var menu = $('.vertical-category-menu');
+        var logo = $('.header-logo');
+        var posMenu = menu.offset();
+        windowz.on("scroll", function () {
+            if (windowz.scrollTop() > posMenu.top - 20) {
+                logo.removeClass("animation-logo");
+                menu.addClass('fix-menu animation-menu');
+            } else {
+                logo.addClass("animation-logo");
+                menu.removeClass('fix-menu animation-menu');
+            }
+        });
         /* --- CUSTOMIZE ZOOM ELEVATE ----- */
         $("#img1").elevateZoom({
             gallery: 'gallery_01',
             cursor: "-webkit-zoom-in",
             zoomType: 'window',
             galleryActiveClass: "active",
-            imageCrossfade: false,
-            scrollZoom: true,
+            imageCrossfade: false,            
             zoomLens: true,
             lensZoom: true,
-            zoomWindowWidth: 200,
-            zoomWindowHeight: 200,
+            zoomWindowWidth: 130,
+            zoomWindowHeight: 130,
             responsive: true,
         });
 
@@ -26,16 +37,15 @@
             return false;
         });
     } else {
-        var menuWidth = $('.vertical-category-menu').width();
-        console.log(menuWidth);
+        var menuWidth = $('.vertical-category-menu').width();        
         $('category-menu-list-item').children().css("width", menuWidth);
 
-        $('#gallery_01').find('a[data-image]').on('click', function(){
-            var o = $(this)            
+        $('#gallery_01').find('a[data-image]').on('click', function () {
+            var o = $(this)
             var image = o.attr('data-image');
             $('.owl-item.active').removeClass('active');
-            o.addClass('active');            
-            $('#img1.image-zoom-elevate').attr('src',image);
+            o.addClass('active');
+            $('#img1.image-zoom-elevate').attr('src', image);
         });
     }
     $('.vertical-category-menu').click(function () {
