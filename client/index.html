@@ -2,15 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Well Played</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="assets\fonts\fonts-awesome\font-awesome.min.css">
     <link href="assets\fonts\oswald-fonts.css" rel="stylesheet">
-    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content\bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets\css\ng-animation.css">
     <link rel="stylesheet" href="assets\css\app.css">
+    <link rel="stylesheet" href="assets\css\appProduct.css">
     <style>
         .ng-show {
             height: 100px;
@@ -22,11 +23,11 @@
     <div class="page-loader loader"></div>
 
     <!----BEGIN HEADER ---->
-    <header class="header">
+    <header class="fix-header-bar">
         <div class="container">
             <div class="row">
                 <div class="logo col-xs-12 col-lg-3">
-                    <a class="header-logo" href="#/"><img src="assets\images\logo-icon.png" alt="SAMPLELOGO"></a>
+                    <a class="header-logo" ui-sref="product"><img src="assets\images\logo-icon.png" alt="SAMPLELOGO"></a>
                 </div>
                 <div class="search-bar form-group col-xs-12 col-lg-5">
                     <div class="search-box">
@@ -115,9 +116,10 @@
     <!----END HEADER ---->
 
     <!----BEGIN MAIN-CONTENT ---->
-    <div class="main-content" ui-view>
-
+    <div class="main-views">
+        <div class="main-content" ui-view></div>
     </div>
+    
 
     <!---- BEGIN FEATURES ---->
     <div class="features">
@@ -328,37 +330,44 @@
     fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'))
     </script>
-    <script src="Scripts/jquery-3.1.0.min.js"></script>
-    <script src="Scripts/bootstrap.min.js"></script>
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-ui-router.min.js"></script>
-    <script src="Scripts/angular-animate.min.js"></script>
+    <script src="Scripts/jquery-3.1.0.min.js"  ></script>
+    <script src="Scripts/bootstrap.min.js" ></script>
+    <script src="Scripts/angular.min.js" ></script>
+    <script src="Scripts/angular-ui-router.min.js" ></script>
+    <script src="Scripts/angular-animate.min.js" ></script>
     <!-- APP MODULE -->
-    <script src="app/appModule.js"></script>
+    <script src="app/appModule.js"></script>   
     <script src="app/appConfig.js"></script>
-    <script src="app/product/appProductModule.js"></script>
+    <script src="app/home/product/appProductModule.js"></script>
+    
 
     <!-- APP CONTROLLERS -->
-    <script src="app/home/homeController.js"></script>
-    <script src="app/home/menu/controllers/psMenuController.js"></script>
-    <script src="app/product/controllers/psTabNewProductController.js"></script>
+        <!-- HOME CONTROLLERS -->
+        <script src="app/home/homeController.js"></script>
+        <script src="app/home/menu/controllers/psMenuController.js"></script>
+        <script src="app/home/product/controllers/psTabNewProductController.js"></script>
 
+        <!-- PRODUCT CONTROLLERS -->   
+        <script src="app\product\controllers\productController.js"></script>  
     <!-- APP DIRECTIVES -->
-    <script src="app/home/menu/directives/psMenuDirective.js"></script>
-    <script src="app/home/menu/directives/psMenuGroupDirective.js"></script>
-    <script src="app/home/menu/directives/psMenuItemDirective.js"></script>
-    <script src="app/home/menu/directives/psMenuMegaListDirective.js"></script>
-    <script src="app/home/menu/directives/psMegaGroupDirective.js"></script>
-    <script src="app/product/directives/psTabNewProductDirective.js"></script>
-    <script src="app/product/directives/psBrandsSliderDirective.js"></script>
-    <script src="app/product/directives/psProductDirective.js"></script>
+        <!-- HOME DIRECTIVES -->
+        <script src="app/home/menu/directives/psMenuDirective.js" ></script>
+        <script src="app/home/menu/directives/psMenuGroupDirective.js"></script>
+        <script src="app/home/menu/directives/psMenuItemDirective.js"></script>
+        <script src="app/home/menu/directives/psMenuMegaListDirective.js"></script>
+        <script src="app/home/menu/directives/psMegaGroupDirective.js"></script>
+        <script src="app/home/product/directives/psTabNewProductDirective.js"></script>
+        <script src="app/home/product/directives/psBrandsSliderDirective.js"></script>
+        <script src="app/home/product/directives/psProductDirective.js"></script>
+
+        <!-- PRODUCT DIRECTIVES -->
+        <script src="app/product/directives/productCategoryMenuDirective.js"></script>
     <!-- APP SERVICES -->
 
 
     <!-- APP ELSE -->
-
-    <script src="assets/js/responsiveCarousel.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/responsiveCarousel.min.js" async></script>
+    <script src="assets/js/app.js" async></script>
 </body>
 
 </html>

@@ -8,7 +8,7 @@
                 commingProducts: '=',
                 bestSellerProducts: '='
             },
-            templateUrl: "app/product/templates/psTabNewProductTemplate.html",
+            templateUrl: "app/home/product/templates/psTabNewProductTemplate.html",
             controller: "psTabNewProductCtrl"
             
         }

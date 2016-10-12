@@ -79,21 +79,10 @@ img {
 @keyframes MENU {
   from {
     overflow: hidden;
-    height: 0; }
+    top: 73px; }
   to {
     overflow: visible;
-    height: 55px; } }
-.animation-logo {
-  animation: LOGO .5s;
-  animation-fill-mode: both; }
-
-@keyframes LOGO {
-  from {
-    transform: scale(0.7);
-    opacity: 0; }
-  to {
-    transform: scale(1);
-    opacity: 1; } }
+    top: 10px; } }
 /*---------STYLE FOR ZOOM ELEVATE----------*/
 .zoomLens {
   width: 130px; }
@@ -136,26 +125,48 @@ img {
     top: 100%;
     left: 0; }
     .main-menu .vertical-category-menu .category-menu-list-item .category-item {
-      height: 55px;
-      margin-top: 2px;
-      font-size: 23px;
-      background-color: #fbfbfb;
-      color: #29292b;
-      border: 1px solid #b5b5bb;
       position: relative; }
-      .main-menu .vertical-category-menu .category-menu-list-item .category-item .cate-icon {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 30px; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item .cate-icon img {
-          width: 25px;
-          height: 25px; }
-      .main-menu .vertical-category-menu .category-menu-list-item .category-item .cate-text {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: 55px;
-        margin-left: 10px; }
-      .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list {
+      .main-menu .vertical-category-menu .category-menu-list-item .category-item .menu-title-zone {
+        height: 55px;
+        margin-top: 2px;
+        font-size: 23px;
+        background-color: #fbfbfb;
+        color: #29292b;
+        border: 1px solid #b5b5bb;
+        position: relative; }
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .menu-title-zone .cate-icon {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 30px; }
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item .menu-title-zone .cate-icon img {
+            width: 25px;
+            height: 25px; }
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .menu-title-zone .cate-text {
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 55px;
+          margin-left: 10px; }
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .menu-title-zone:hover {
+          background-color: #09c3ed;
+          color: #fbfbfb; }
+      .main-menu .vertical-category-menu .category-menu-list-item .category-item .toggle-nav {
+        display: none;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        text-decoration: none; }
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item .toggle-nav .fa {
+          width: 35px;
+          height: 35px;
+          color: #29292b;
+          line-height: 35px;
+          text-align: center;
+          border: 1px solid #b5b5bb;
+          border-radius: 4px; }
+        @media (max-width: 1199px) {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item .toggle-nav {
+            display: block !important; } }
+      .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list {
         display: none;
         min-height: 388px;
         min-width: 870px;
@@ -164,48 +175,48 @@ img {
         position: absolute;
         background-color: #efefef;
         border: 1px solid #b5b5bb; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .row {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .row {
           padding: 0;
           margin: 0; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .group-item {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .group-item {
           padding: 0;
           margin: 25px 30px;
           text-align: center;
           background-color: #d9d9da; }
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .group-item .view-by-brand {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .group-item .view-by-brand {
             color: #09c3ed;
             font-size: 18px;
             line-height: 40px; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .group-item .view-by-brand > .title {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .group-item .view-by-brand > .title {
               padding: 5px 0;
               border-radius: 4px; }
-        .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group {
+        .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group {
           text-align: left; }
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .title {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .title {
             margin-bottom: 30px;
             text-align: center; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .title a {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .title a {
               font-size: 18px;
               color: #09c3ed; }
-          .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .list-mega .item {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .list-mega .item {
             text-align: center;
             color: #29292b;
             line-height: 35px;
             font-size: 15px;
             margin-bottom: 10px;
             border-bottom: none !important; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .list-mega .item i {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .list-mega .item i {
               font-size: 13px;
               margin-right: 5px; }
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group .list-mega .item:hover {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group .list-mega .item:hover {
               background-color: #09c3ed;
               color: #fbfbfb; }
           @media (max-width: 767px) {
-            .main-menu .vertical-category-menu .category-menu-list-item .category-item .category-mega-list .mega-group {
+            .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list .mega-group {
               padding: 0 50px; } }
-      .main-menu .vertical-category-menu .category-menu-list-item .category-item:hover {
-        background-color: #09c3ed;
-        color: #fbfbfb; }
+        @media (max-width: 1199px) {
+          .main-menu .vertical-category-menu .category-menu-list-item .category-item > .category-mega-list {
+            background-color: #efefef; } }
 .main-menu .fix-menu {
   position: fixed;
   width: 262px;
@@ -251,7 +262,8 @@ img {
         margin-bottom: 0; }
         .main .col-left .sidebar .panel-group .panel {
           background-color: #efefef;
-          border: none; }
+          border: none;
+          box-shadow: none; }
           .main .col-left .sidebar .panel-group .panel .panel-heading {
             padding: 5px 15px;
             background-color: #efefef;

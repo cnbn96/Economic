@@ -10,25 +10,11 @@
 @keyframes MENU {
     from {
         overflow: hidden;
-        height: 0;
+        top: 73px;
     }
     to {
         overflow: visible;
-        height: 55px;
-    }
-}
-.animation-logo  {
-    animation: LOGO .5s;
-    animation-fill-mode: both
-} 
-@keyframes LOGO {
-    from {
-        transform:scale(0.7);
-        opacity:0;
-    }
-    to {
-        transform:scale(1);
-        opacity:1;
+        top: 10px;
     }
 }
 /*---------STYLE FOR ZOOM ELEVATE----------*/
@@ -85,29 +71,55 @@
             top: 100%;
             left: 0;
             .category-item{
-                height: 55px;
-                margin-top: 2px;
-                font-size: 23px;
-                background-color: $white;
-                color: $dark;
-                border: 1px solid $dark-line;
                 position: relative;
-                .cate-icon{
-                    display: inline-block;
-                    vertical-align: middle;
-                    margin-left: 30px;
-                    img{
-                        width: 25px;
-                        height: 25px;
+                .menu-title-zone{
+                    height: 55px;
+                    margin-top: 2px;
+                    font-size: 23px;
+                    background-color: $white;
+                    color: $dark;
+                    border: 1px solid $dark-line;
+                    position: relative;
+                    .cate-icon{
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-left: 30px;
+                        img{
+                            width: 25px;
+                            height: 25px;
+                        }
                     }
+                    .cate-text{
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 55px;
+                        margin-left: 10px;
+                    }                    
+                    &:hover{
+                        background-color: $light-blue;
+                        color: $white;
+                    }    
                 }
-                .cate-text{
-                    display: inline-block;
-                    vertical-align: middle;
-                    line-height: 55px;
-                    margin-left: 10px;
-                }
-                .category-mega-list{
+				.toggle-nav{
+                    display: none;
+                    right: 10px;
+                    top: 10px;
+                    position: absolute;
+                    text-decoration: none;
+                    .fa{
+                        width: 35px;
+                        height: 35px;
+                        color: $dark;
+                        line-height: 35px;
+                        text-align: center;
+                        border: 1px solid #b5b5bb;
+                        border-radius: 4px;
+                    }
+                    @media #{$low-tablet}{
+                        display: block !important;
+                    }
+                }                
+                > .category-mega-list{
                     display: none;
                     min-height: 388px;
                     min-width: 870px;
@@ -168,11 +180,10 @@
                             padding: 0 50px;
                         }
                     }
-                }
-                &:hover{
-                    background-color: $light-blue;
-                    color: $white;
-                }
+                    @media #{$low-tablet}{                                                
+                        background-color: $grey-white2;
+                    }
+                }                
             }
         }
     }
@@ -228,6 +239,7 @@
                 .panel{
                     background-color:  $grey-white2;
                     border: none; 
+                    box-shadow: none;
                     .panel-heading{
                         padding: 5px 15px;
                         background-color:  $grey-white2;

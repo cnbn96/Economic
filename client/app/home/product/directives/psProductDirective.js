@@ -9,7 +9,7 @@
                 catName: '@',
                 sliderName: '@'
             },
-            templateUrl: "app/product/templates/psProductTemplate.html",
+            templateUrl: "app/home/product/templates/psProductTemplate.html",
             controller: function ($interval, $scope, $window) {
                 $interval(function () {
                     $('.' + $scope.sliderName).carousel({

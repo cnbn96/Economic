@@ -37,14 +37,4 @@ angular.module('app').controller('psMenuController', function ($scope, $timeout,
             isHorizontal : $scope.isHorizontal
         });    
     };
-    angular.element('.submenu').bind('hover',function(e){
-        checkWidth();
-        if($scope.isHorizontal){
-            if($(e.target).siblings('.dropdown-submenu')){
-
-            }
-        }
-    });
-    
-
 });
